@@ -1,0 +1,8 @@
+pro:
+
+-controller kann von mehreren roboter genutz werden.
+
+cons:
+-perma internet connection needed
+
+Problem gelöst: pfad von javac fehler-durchSystemeigenschaften neuen Pfad erstellen + JDK x32 nicht x64.
