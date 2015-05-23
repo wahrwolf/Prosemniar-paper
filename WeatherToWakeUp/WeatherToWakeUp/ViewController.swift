@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate {
     
 
     @IBOutlet weak var tableView: UITableView!
@@ -17,12 +17,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewControllerWithIdentifier("Alarm") as! UIViewController
-//        self.navigationController?.pushViewController(vc, animated: true)
-
         // Do any additional setup after loading the view, typically from a nib.
-        tableView.delegate = tableViewDelegate
+        tableView.delegate = self
         tableView.dataSource = tableViewDelegate
         
     }
@@ -32,6 +28,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("Alarm") as! UIViewController
+       self.navigationController?.pushViewController(vc, animated: true)
+
+    }
 }
 

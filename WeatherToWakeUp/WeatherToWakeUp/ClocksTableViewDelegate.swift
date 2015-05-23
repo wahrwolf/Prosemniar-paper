@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ClocksTableViewDelegate :  NSObject, UITableViewDelegate, UITableViewDataSource{
+class ClocksTableViewDelegate :  NSObject, UITableViewDataSource{
     let cellIdentifier = "AlarmIdentifier"
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -16,12 +16,8 @@ class ClocksTableViewDelegate :  NSObject, UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as AlarmTableCell;
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! AlarmTableCell;
         cell.clockTimeLabel.text = "6:30";
         return cell;
-    }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        // TODO: open detail screen for clock rules
     }
 }
