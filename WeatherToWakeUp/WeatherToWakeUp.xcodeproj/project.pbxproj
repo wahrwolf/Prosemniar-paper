@@ -13,6 +13,8 @@
 		412011071B10B8FC009666CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 412011061B10B8FC009666CE /* Images.xcassets */; };
 		4120110A1B10B8FC009666CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 412011081B10B8FC009666CE /* LaunchScreen.xib */; };
 		412011161B10B8FD009666CE /* WeatherToWakeUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412011151B10B8FD009666CE /* WeatherToWakeUpTests.swift */; };
+		41D958DC1B10BC1C009172F1 /* AlarmDetailTableviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D958DB1B10BC1C009172F1 /* AlarmDetailTableviewController.swift */; };
+		41D958DE1B10BCD5009172F1 /* AlarmDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D958DD1B10BCD5009172F1 /* AlarmDetailCell.swift */; };
 		522AC916606C96CFDA5E4B4F /* libPods-WeatherToWakeUp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E323365878813DD07F8E7362 /* libPods-WeatherToWakeUp.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		4120110F1B10B8FD009666CE /* WeatherToWakeUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherToWakeUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		412011141B10B8FD009666CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		412011151B10B8FD009666CE /* WeatherToWakeUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherToWakeUpTests.swift; sourceTree = "<group>"; };
+		41D958DB1B10BC1C009172F1 /* AlarmDetailTableviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmDetailTableviewController.swift; sourceTree = "<group>"; };
+		41D958DD1B10BCD5009172F1 /* AlarmDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmDetailCell.swift; sourceTree = "<group>"; };
 		A0FC4BAE0AD985D6CDD819EF /* Pods-WeatherToWakeUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherToWakeUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherToWakeUp/Pods-WeatherToWakeUp.release.xcconfig"; sourceTree = "<group>"; };
 		B1720EF26E7F4B27A6F6A7BA /* Pods-WeatherToWakeUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherToWakeUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherToWakeUp/Pods-WeatherToWakeUp.debug.xcconfig"; sourceTree = "<group>"; };
 		E323365878813DD07F8E7362 /* libPods-WeatherToWakeUp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherToWakeUp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +94,8 @@
 				412011061B10B8FC009666CE /* Images.xcassets */,
 				412011081B10B8FC009666CE /* LaunchScreen.xib */,
 				412010FD1B10B8FC009666CE /* Supporting Files */,
+				41D958DB1B10BC1C009172F1 /* AlarmDetailTableviewController.swift */,
+				41D958DD1B10BCD5009172F1 /* AlarmDetailCell.swift */,
 			);
 			path = WeatherToWakeUp;
 			sourceTree = "<group>";
@@ -271,7 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41D958DE1B10BCD5009172F1 /* AlarmDetailCell.swift in Sources */,
 				412011021B10B8FC009666CE /* ViewController.swift in Sources */,
+				41D958DC1B10BC1C009172F1 /* AlarmDetailTableviewController.swift in Sources */,
 				412011001B10B8FC009666CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
