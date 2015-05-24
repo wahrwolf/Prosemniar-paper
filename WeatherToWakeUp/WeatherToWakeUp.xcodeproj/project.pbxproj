@@ -16,6 +16,11 @@
 		41D958DC1B10BC1C009172F1 /* AlarmDetailTableviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D958DB1B10BC1C009172F1 /* AlarmDetailTableviewController.swift */; };
 		41D958DE1B10BCD5009172F1 /* AlarmDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D958DD1B10BCD5009172F1 /* AlarmDetailCell.swift */; };
 		522AC916606C96CFDA5E4B4F /* libPods-WeatherToWakeUp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E323365878813DD07F8E7362 /* libPods-WeatherToWakeUp.a */; };
+		A3F1C0F11B11C58700DC1F91 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F1C0F01B11C58700DC1F91 /* AudioToolbox.framework */; };
+		A3F1C0F31B11C85600DC1F91 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F1C0F21B11C85600DC1F91 /* AVFoundation.framework */; };
+		A3F1C0F51B11C92C00DC1F91 /* Miau.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A3F1C0F41B11C92C00DC1F91 /* Miau.mp3 */; };
+		C2815BAB1B10C28B005081CE /* ClocksTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2815BAA1B10C28B005081CE /* ClocksTableViewDelegate.swift */; };
+		C2C46F1A1B10E0B5007EA705 /* AlarmTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C46F191B10E0B5007EA705 /* AlarmTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +47,12 @@
 		41D958DB1B10BC1C009172F1 /* AlarmDetailTableviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmDetailTableviewController.swift; sourceTree = "<group>"; };
 		41D958DD1B10BCD5009172F1 /* AlarmDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmDetailCell.swift; sourceTree = "<group>"; };
 		A0FC4BAE0AD985D6CDD819EF /* Pods-WeatherToWakeUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherToWakeUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherToWakeUp/Pods-WeatherToWakeUp.release.xcconfig"; sourceTree = "<group>"; };
+		A3F1C0F01B11C58700DC1F91 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A3F1C0F21B11C85600DC1F91 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A3F1C0F41B11C92C00DC1F91 /* Miau.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Miau.mp3; sourceTree = "<group>"; };
 		B1720EF26E7F4B27A6F6A7BA /* Pods-WeatherToWakeUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherToWakeUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherToWakeUp/Pods-WeatherToWakeUp.debug.xcconfig"; sourceTree = "<group>"; };
+		C2815BAA1B10C28B005081CE /* ClocksTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClocksTableViewDelegate.swift; sourceTree = "<group>"; };
+		C2C46F191B10E0B5007EA705 /* AlarmTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmTableCell.swift; sourceTree = "<group>"; };
 		E323365878813DD07F8E7362 /* libPods-WeatherToWakeUp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherToWakeUp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -51,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F1C0F31B11C85600DC1F91 /* AVFoundation.framework in Frameworks */,
+				A3F1C0F11B11C58700DC1F91 /* AudioToolbox.framework in Frameworks */,
 				522AC916606C96CFDA5E4B4F /* libPods-WeatherToWakeUp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +103,8 @@
 				412010FF1B10B8FC009666CE /* AppDelegate.swift */,
 				412011011B10B8FC009666CE /* ViewController.swift */,
 				412011031B10B8FC009666CE /* Main.storyboard */,
+				C2C46F191B10E0B5007EA705 /* AlarmTableCell.swift */,
+				C2815BAA1B10C28B005081CE /* ClocksTableViewDelegate.swift */,
 				412011061B10B8FC009666CE /* Images.xcassets */,
 				412011081B10B8FC009666CE /* LaunchScreen.xib */,
 				412010FD1B10B8FC009666CE /* Supporting Files */,
@@ -103,6 +117,7 @@
 		412010FD1B10B8FC009666CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A3F1C0F41B11C92C00DC1F91 /* Miau.mp3 */,
 				412010FE1B10B8FC009666CE /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -137,6 +152,8 @@
 		A52CA247CC7CB50FE78EC2C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A3F1C0F21B11C85600DC1F91 /* AVFoundation.framework */,
+				A3F1C0F01B11C58700DC1F91 /* AudioToolbox.framework */,
 				E323365878813DD07F8E7362 /* libPods-WeatherToWakeUp.a */,
 			);
 			name = Frameworks;
@@ -226,6 +243,7 @@
 			files = (
 				412011051B10B8FC009666CE /* Main.storyboard in Resources */,
 				4120110A1B10B8FC009666CE /* LaunchScreen.xib in Resources */,
+				A3F1C0F51B11C92C00DC1F91 /* Miau.mp3 in Resources */,
 				412011071B10B8FC009666CE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,9 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				41D958DE1B10BCD5009172F1 /* AlarmDetailCell.swift in Sources */,
+				C2C46F1A1B10E0B5007EA705 /* AlarmTableCell.swift in Sources */,
 				412011021B10B8FC009666CE /* ViewController.swift in Sources */,
 				41D958DC1B10BC1C009172F1 /* AlarmDetailTableviewController.swift in Sources */,
 				412011001B10B8FC009666CE /* AppDelegate.swift in Sources */,
+				C2815BAB1B10C28B005081CE /* ClocksTableViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -397,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -411,8 +431,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WeatherToWakeUp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -422,8 +444,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WeatherToWakeUp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

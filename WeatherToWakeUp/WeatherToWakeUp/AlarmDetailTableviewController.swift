@@ -30,10 +30,13 @@ class AlarmDetailTableviewController: UITableViewController
         //sunny weather
         if (indexPath.row == 0 )
         {
-            cell.time.text = "dummytime"// initialtime -
+            cell.weatherImage.image = UIImage(named: "rain")
+            //cell.time.text = "dummytime"// initialtime -
         } else if (indexPath.row == 1){
+            cell.weatherImage.image = UIImage(named: "rainsun")
             //normal time
         } else {
+            cell.weatherImage.image = UIImage(named: "sun")
             //bad weather
         }
         return cell

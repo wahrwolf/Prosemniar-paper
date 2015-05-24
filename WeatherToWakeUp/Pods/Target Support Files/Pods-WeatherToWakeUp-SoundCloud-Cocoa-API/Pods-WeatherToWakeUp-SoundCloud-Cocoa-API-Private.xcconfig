@@ -1,0 +1,6 @@
+#include "Pods-WeatherToWakeUp-SoundCloud-Cocoa-API.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/SoundCloud-Cocoa-API" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CZWeatherKit" "${PODS_ROOT}/Headers/Public/NXOAuth2Client" "${PODS_ROOT}/Headers/Public/SoundCloud-Cocoa-API"
+OTHER_LDFLAGS = ${PODS_WEATHERTOWAKEUP_SOUNDCLOUD_COCOA_API_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES
