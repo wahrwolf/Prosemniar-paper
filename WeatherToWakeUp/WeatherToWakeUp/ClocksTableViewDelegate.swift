@@ -18,6 +18,7 @@ class ClocksTableViewDelegate :  NSObject, UITableViewDataSource{
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! AlarmTableCell;
         cell.clockTimeLabel.text = "6:30";
+        cell.backgroundColor = UIColor.clearColor()
         return cell;
     }
 }

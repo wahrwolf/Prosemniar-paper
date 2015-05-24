@@ -3,6 +3,7 @@
 
 target 'WeatherToWakeUp' do
 
+pod "SoundCloud-Cocoa-API"
 pod "CZWeatherKit"
 
 end
