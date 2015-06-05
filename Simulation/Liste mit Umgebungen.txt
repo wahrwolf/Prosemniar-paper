@@ -17,3 +17,4 @@ Umgebungen:
 	- webots (sieht sehr gut aus, kann java) <-- macht 4van
 	- simbad (sieht gut aus, kann java) <-- Macht 4dahmen
 	- gl robot (eher nicht)
+	- morse
