@@ -1,0 +1,51 @@
+Wir haben uns endlich mal wieder getrofffen ...
+
+Wir benutzen morse mit Python.
+	- läuft nur unter Linux
+	- hat Performance Probleme mit VM
+
+	- eventuell direkte Ausführung via Tina :)
+
+Wir synchroniseren weiterhin mit git:
+	- alle Source-codes dezentral
+
+folgendes haben wir beschlossen:
+	- 2 Agenten:
+		#Hummer
+		#quadrotor
+	- 1 Sensor
+		#GPS
+
+Grober Algorithmus für "create controlset":
+{
+	- 1 Bewegung als Tupel von Einstellungen (z.B. Geschwindigkeit, Achse, Strecke/Zeit)
+	- Erstelle Map: Bewegungseinstlllung -> Koordinate (Entfernung ...)
+	- Erstelle leeres Set
+	- Für jeden Eintrag in der Map:
+		Prüfe ob Koordinate+x schon in Set
+			wenn nicht dann füge hinz
+			sonst lösche Eintrag aus Map
+
+	- Speichere Set als control-Set
+}
+
+Grober Algorithmus für "generate node-map"
+{
+	- markiere aktuelle pos als ersten node
+	
+	- mache folgendes:
+		- für jede bewegung in control-set
+		führe bewegung aus
+		ist akutelle pos schon in node liste?
+			wenn nicht, hänge pos als node an
+		führe "gegenbewegung aus"
+
+		fahre zum nächsten node
+
+	- solange wie aktuelle pos nicht letzte pos auf liste
+}
+
+Folgendes sollte bis nächtes mal laufen:
+
+Die agenten samt sensoren sollten ansteuerbar sein
+eventuell gibt es schon interface/class Bewegung die eine Bewegungseinstellung wie oben in create controllset benötigt wird
