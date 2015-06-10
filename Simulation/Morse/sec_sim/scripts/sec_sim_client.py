@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 """
-Test client for the <my_first_sim> simulation environment.
+Test client for the <sec_sim> simulation environment.
 
 This simple program shows how to control a robot from Python.
 

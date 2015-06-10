@@ -1,1 +1,0 @@
-from .bewegungsPrimitiv import Bewegungsprimitiv
