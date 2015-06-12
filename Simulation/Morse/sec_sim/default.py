@@ -16,7 +16,8 @@ robot = Hummer('car')
 
 # The list of the main methods to manipulate your components
 # is here: http://www.openrobots.org/morse/doc/stable/user/builder_overview.html
-robot.translate(1.0, 0.0, 0.0)
+robot.translate(1.0, 0, 0.0)
+robot.rotate(0.0,0.0,0.0)
 
 # Add a motion controller
 # Check here the other available actuators:
@@ -27,6 +28,13 @@ robot.translate(1.0, 0.0, 0.0)
 motion = MotionVW()
 robot.append(motion)
 
+#creates a new instance of the actuator
+steerforce = SteerForce()
+
+# place your component at the correct location
+steerforce.translate(1.0, 0.0, 0.0)
+steerforce.rotate(0.0, 0.0, 0.0)
+robot.append(steerforce)
 
 # Add a keyboard controller to move the robot with arrow keys.
 keyboard = Keyboard()

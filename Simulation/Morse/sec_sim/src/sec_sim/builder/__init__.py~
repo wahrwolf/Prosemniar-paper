@@ -1,0 +1,18 @@
+from morse.builder import *
+
+# adds a default robot (the MORSE mascott!)
+robot = Morsy()
+
+# creates a new instance of the actuator
+steerforce = SteerForce()
+
+# place your component at the correct location
+steerforce.translate(<x>, <y>, <z>)
+steerforce.rotate(<rx>, <ry>, <rz>)
+
+robot.append(steerforce)
+
+# define one or several communication interface, like 'socket'
+steerforce.add_interface(<interface>)
+
+env = Environment('empty')
