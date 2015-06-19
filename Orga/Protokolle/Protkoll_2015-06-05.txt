@@ -49,3 +49,14 @@ Folgendes sollte bis nächtes mal laufen:
 
 Die agenten samt sensoren sollten ansteuerbar sein
 eventuell gibt es schon interface/class Bewegung die eine Bewegungseinstellung wie oben in create controllset benötigt wird
+
+
+Von Felix:
+	bewegung abstrahieren
+	controll-set erstellen!!
+
+	im paper:
+	paper beschreiben(kurz)
+	was wollen wir machen
+	wie sieht unseres aus!
+	

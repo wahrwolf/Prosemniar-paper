@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:4.0
+N:Dahmen;Vincent;;;
+FN:Vincent Dahmen
+ORG:Mafiasi
+TEL;TYPE=mobile,voice;VALUE=uri:tel:+49-176-52436808
+EMAIL:4dahmen@informatik.uni-hamburg.de
+X-MATRIKEL-NR:6689546
+END:VCARD
