@@ -12,4 +12,6 @@ erstellt.
 Die Bewegungen werden mit einer vorher bestimmten Entfernung erstellt und als eine Liste von 
 Positionen abgespeichert, somit erhalten wir eine Diskretisierung der Pfade. 
 In jeder dieser Positionen wird der Wert und die Toleranz gespeichert.
-Um aus den Bewegungen ein Control-Set zu erstellen, müssen sie auf Equivalentz geprüft werden und ggf. Zerlegen.
+Um aus den Bewegungen ein Control-Set zu erstellen, müssen sie auf Äquivalenz geprüft
+und ggf. zerlegt werden.
+Dies wird gelöst durch ein "Bewegungstunnel"
