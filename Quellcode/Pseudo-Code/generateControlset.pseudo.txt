@@ -1,0 +1,66 @@
+
+
+
+public ControlSet generateControlSet(Set<BewegungsErzeuger> bewFactories, int intervall, Map<String, double> toleranzen)
+{
+	//erzeuge alle möglichen Bewegungen
+	Set<Bewegung> alleBewegungen;
+
+	for(BewegungsErzeuger factory: bewFactories)
+	{
+		alleBewegungen.addAll(factory.erzeugeAlleBewegungen());
+	}
+
+	//Fasse Bewegungen zu Tunneln zusammen
+
+	Map<Position, Set<Bewegung>> endPunkte
+
+	for(Bewegung bewegung: alleBewegungen)
+	{
+		if(bewegung.getEntfernung <= intervall)
+		{
+			alleBewegungen.put(bewegung.getEndPosition, bewegung);
+		}
+		alleBewegungen.remove(bewegung);
+	}
+
+	Map<Position, Bewegungstunnel> bewegungsTunnel
+
+	for(Set<Bewegung> bewegungen: endPunkte.values())
+	{
+		bewegungsTunnel.add(new Bewegungstunnel(bewegungen));
+	}
+
+	//Versuche mit Sub-Bewgungen Tunnel zu "durchqueren"
+	List<Bewegungstunnel> sortedTunnel=bewegungsTunnel.values();
+
+	for(Bewegungstunnel tunnel:sortedTunnel)
+	{
+		if(endeIstErreichbar(tunnel, sortedTunnel))
+		{
+			bewegungsTunnel.remove(tunnel);
+		}
+	}
+
+
+}
+
+public boolean endeIstErreichbar(Bewegungstunnel tunnel, List<Bewegungstunnel> subTunnels)
+{
+	for(Bewegungstunnel subTunnel: subTunnels)
+	{
+		if
+	}
+	return false;
+}
+
+
+private boolean  kommmtBewegungNaeherRan(Start, Tunnel, Bewegung)
+{
+	if(!Tunnel.containsPosition(Bewegung.getEndPosition))
+	{
+		return false;
+	}else if{
+		
+	}
+}

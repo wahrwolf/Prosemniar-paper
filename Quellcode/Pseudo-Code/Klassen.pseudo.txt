@@ -1,0 +1,40 @@
+Folgende Datenstrukturen:
+	abstract BewegungsErzeuger
+		Bewebung erzeugeBewegung(Object parameter)
+		Set<Bewebung> erzeugeAlleBewegungen();
+
+	Bewegung
+		BewegungsErzeuger _erzeuger
+		Object _erzeugerParameter
+		List<Postionen> _verlauf
+		int _entfernung
+
+		Position getEndPosition(){
+			return _verlauf.get(_verlauf.size()-1) }
+
+
+	abstract Position
+		Map<String,double> _values
+		Map<String, double> _toleranzen
+		// String ist Name der Dimension (const)
+
+		void setToleranzen(Map<String, double> toleranzen)
+		boolean isNear(Position pos)
+		boolean equals(Object){return isNear}
+		double getTotalDistance(Position)
+		Position moveWith(Bewegung)
+
+	Bewgungstunnel
+		List<Bewegung> _content
+		Position _endPosition
+		Map<String, double[2]) _borders
+		// String ist Name der Dimension
+		// [0]=max ;[1]=min
+
+		Bewegungstunnel(Set<Bewegung> content)
+		boolean containsPosition(Position)
+		Position getEndPositon()
+
+
+	Control-Set
+		Map<Postion,Bewegung> _controlSet
