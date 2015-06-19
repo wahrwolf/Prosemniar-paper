@@ -1,0 +1,8 @@
+key features of report+ what was done and how + main outcome of work
+
+-> states the topic of the report
+-> outlines approach to the task if applicable
+-> gives the most important findings of research or investigation, or the key aspects of your design
+-> states the main outcomes or conclusions.
+
+In diesem Report wird ein Control Set anhand der gegebenen Informationen, die 
