@@ -1,0 +1,18 @@
+
+Von Felix:
+	bewegung abstrahieren
+	controll-set erstellen!!
+
+	im paper:
+	paper beschreiben(kurz)
+	was wollen wir machen
+	wie sieht unseres aus!
+	
+
+Was wir gemacht haben:
+	-git aufgeräumt :)
+	-Klassen-Definition
+	-generateControlSet in Pseudo (++)
+	-reqs für den Report
+
+
