@@ -1,0 +1,12 @@
+//technical Report
+
+Proseminar- Autonom navigierende Systeme (SoSe'15)
+Fachbereich Informatik
+Universität Hamburg
+
+TitelA: Interface gebundene Konstruktion eines Control Sets
+(weitere Vorschläge?)
+
+Authoren: Vincent Dahmen (6689845), Tina Van (6707886)
+
+Datum: ...
