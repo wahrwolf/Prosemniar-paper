@@ -18,6 +18,8 @@ Folgende Datenstrukturen:
 		Map<String, double> _toleranzen
 		// String ist Name der Dimension (const)
 
+		Position(Map) <-- init mit Werten
+		Position(List) <-- init alle dim auf 0
 		void setToleranzen(Map<String, double> toleranzen)
 		boolean isNear(Position pos)
 		boolean equals(Object){return isNear}
@@ -34,6 +36,8 @@ Folgende Datenstrukturen:
 		Bewegungstunnel(Set<Bewegung> content)
 		boolean containsPosition(Position)
 		Position getEndPositon()
+		Bewegung getMittelWeg()
+		//mit for schleife an dimension lang hangeln ...
 
 
 	Control-Set
