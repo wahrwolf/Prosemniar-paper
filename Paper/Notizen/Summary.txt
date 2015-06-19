@@ -2,7 +2,14 @@ key features of report+ what was done and how + main outcome of work
 
 -> states the topic of the report
 -> outlines approach to the task if applicable
--> gives the most important findings of research or investigation, or the key aspects of your design
+-> gives the most important findings of research or investigation, or
+   the key aspects of your design
 -> states the main outcomes or conclusions.
 
-In diesem Report wird ein Control Set anhand der gegebenen Informationen, die 
+In diesem Report wird ein Control Set anhand der übergebenen Informationen 
+(alle möglichen Bewegungsmöglichkeiten als Set, die Toleranzen, ...), des nutzenden Roboters,
+erstellt.
+Die Bewegungen werden mit einer vorher bestimmten Entfernung erstellt und als eine Liste von 
+Positionen abgespeichert, somit erhalten wir eine Diskretisierung der Pfade. 
+In jeder dieser Positionen wird der Wert und die Toleranz gespeichert.
+Um aus den Bewegungen ein Control-Set zu erstellen, müssen sie auf Equivalentz geprüft werden und ggf. Zerlegen.

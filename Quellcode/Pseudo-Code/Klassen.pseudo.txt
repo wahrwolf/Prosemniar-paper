@@ -1,7 +1,7 @@
 Folgende Datenstrukturen:
 	abstract BewegungsErzeuger
 		Bewebung erzeugeBewegung(Object parameter)
-		Set<Bewebung> erzeugeAlleBewegungen();
+		Set<Bewegung> erzeugeAlleBewegungen();
 
 	Bewegung
 		BewegungsErzeuger _erzeuger
@@ -24,7 +24,7 @@ Folgende Datenstrukturen:
 		double getTotalDistance(Position)
 		Position moveWith(Bewegung)
 
-	Bewgungstunnel
+	Bewegungstunnel
 		List<Bewegung> _content
 		Position _endPosition
 		Map<String, double[2]) _borders
