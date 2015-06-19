@@ -42,6 +42,19 @@ public ControlSet generateControlSet(Set<BewegungsErzeuger> bewFactories, int in
 		}
 	}
 
+	//Normalisieren der übrigen Tunnel
+	ControlSet controlSet;
+
+	for(Bewegungstunnel tunnel sortedTunnel)
+	{
+		//ToDo besser ausformulieren und impl
+
+		//wähle bewegung die am dichtesten am mittlweg ist aus
+		//füge bewegung + end pos zum control-set hinzu
+	}
+
+	return controlSet
+
 
 }
 
@@ -49,7 +62,7 @@ public boolean endeIstErreichbar(Bewegungstunnel tunnel, List<Bewegungstunnel> s
 {
 	for(Bewegungstunnel subTunnel: subTunnels)
 	{
-		if
+		//ToDo rekursive Prüffunktion !!!
 	}
 	return false;
 }
@@ -57,10 +70,18 @@ public boolean endeIstErreichbar(Bewegungstunnel tunnel, List<Bewegungstunnel> s
 
 private boolean  kommmtBewegungNaeherRan(Start, Tunnel, Bewegung)
 {
-	if(!Tunnel.containsPosition(Bewegung.getEndPosition))
+	Position tunnelEnde=Tunnel.getEndPosition() ;
+
+	if(!Tunnel.containsPosition(Bewegung.getEndPosition)
+		|| Start.equals(tunnelEnde )
 	{
 		return false;
-	}else if{
-		
+	}else if(Bewegung.getEndPosition.equals(tunnelEnde){
+		return true;
+	} else {
+		return (Start.getTotalDistance(tunnelEnde) 
+			< Start.moveWith(Bewegung).getTotalDistance(tunnelEnde));
 	}
 }
+
+private
