@@ -6,12 +6,19 @@ key features of report+ what was done and how + main outcome of work
    the key aspects of your design
 -> states the main outcomes or conclusions.
 
-In diesem Report wird ein Control Set anhand der übergebenen Informationen 
-(alle möglichen Bewegungsmöglichkeiten als Set, die Toleranzen, ...), des nutzenden Roboters,
-erstellt.
+In diesem Report wird ein Control Set, dass nach dem von Mihail Pivtoraiko and Alonzo Kelly vorgestelltem Verfahren,
+in dem Paper: Generating Near Minimal Spanning Control Sets for Constrained Motion Planning in
+Discrete State Spaces, erstellt.
+
+Der Code ist abstrakt, um ihn eine Anpassungsfähigkeit an Roboterbewegungen in n-Dimensionen zu geben.
+Es werden Informationen 
+(alle vorhanden Bwegungserzeuger als Set, die Toleranzen, ...) des nutzenden Roboters benötigt.
 Die Bewegungen werden mit einer vorher bestimmten Entfernung erstellt und als eine Liste von 
 Positionen abgespeichert, somit erhalten wir eine Diskretisierung der Pfade. 
 In jeder dieser Positionen wird der Wert und die Toleranz gespeichert.
-Um aus den Bewegungen ein Control-Set zu erstellen, müssen sie auf Äquivalenz geprüft
-und ggf. zerlegt werden.
-Dies wird gelöst durch ein "Bewegungstunnel"
+Mithilfe von "Bewegungstunnel" werden die Bewegungen auf Äquivalenz geprüft
+und ggf. zerlegt.
+So erhalten wir die Menge an atomaren Bewegungen (also solche die nicht durch andere substituierbar sind).
+Diese Menge ist identisch mit dem im Artikel erwähnten Control-Set.
+
+""Conclusion fehlt""
