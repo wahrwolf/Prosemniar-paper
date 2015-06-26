@@ -1,0 +1,37 @@
+- the background to the topic of your report to set your work in its broad context
+- a clear statement of the purpose of the report, usually to present the results of your
+  research, investigation, or design
+- a clear statement of the aims of the project
+- technical background necessary to understand the report;
+  e.g. theory or assumptions
+- a brief outline of the structure of the report if appropriate 
+  (this would not be necessary in a short report)
+
+
+1.Einleitung
+
+Um Wegfindungsalgorithmen auf Bewegungsprimitiven, unter Beachtung von nichtholonomen Bewegungen, zu verwenden,
+müssen diese Restriktionen für den Algorithmus definiert werden. Das zu erzeugende "Control-Set" stellt die Menge aller Bewegungen dar,
+die das nichtholonomische Konstrukt fähig ist. Alle weiteren Wegfindungsalgorithmen können mithilfe des Sets
+die Nichtholonomintät des Konstruktes einbeziehen.
+
+Der Report handelt sich um die Implementation des Codes mit dem solch ein Control Set,(...?), erstellt wird.
+
+Zuerst werden die einzelnen Datenstrukturen definiert, was sie modellieren, wofür sie genutzt werden, wie sie implementiert wurden.
+Darauf folgt die Implementation der Methoden generateControlSet und generateNodeMap.
+Im Anschluss ist eine Auswertung der Vorgehensweise des Codes. (präziser- später, wenn unsere auswertung steht)
+
+
+________________________________________________________________________________
+
+
+suchbasiertes planen mit bewegungsprimitiven
+benötigt control set
+
+report beschreibt nutzung,implementation, sowie funktionsweise des codes
+
+projekt soll control Sets erstellen können für roboter mit beliebig vielen dimensionen von bewegungen
+
+necessary technical background needed: basic programming skills----
+
+struktur vorstellen nochmal

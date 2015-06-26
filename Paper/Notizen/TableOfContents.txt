@@ -1,0 +1,37 @@
+    Number all the preliminary pages in lower-case Roman numerals (i, ii, iii, iv, ...). You don't have to place the number i on the title page. Just count it and put ii on the second page of your report. Preliminary pages are any which come before the introduction, including the summary and, where applicable, acknowledgements.
+    Number all the remaining pages of your report with Arabic numerals (1, 2, 3, 4, ...). Thus the report proper begins on page 1 with your introduction, which is usually Section 1.
+    Provide a title in your table of contents to describe the contents of each appendix (Note: one appendix, two or more appendices). Don't just call them Appendix 1 or Appendix 2.
+
+	Zusammenfassung					ii
+
+1.0	Einleitung					1
+
+2.0	Definitionen der Datenstrukturen
+	2.1 	Implemenation des ControlSet 
+	2.2	Bewegung
+	2.3	Bewegungserzeuger
+	2.4	Position
+	2.5	Bewegungstunnel
+
+3.0	Implementation des generateControlSet
+
+4.0	Implemenation des generateNodemap
+
+5.0	Bewertung/Kritik/Fazit 
+
+6.0	Quellen
+
+(Appendices:/
+ Appendix 1: /)
+__________________________________________________________________
+für alle punkte in 2.0:
+- darstelllungs-was es modelliert
+	-nutzung(wozu brauchen wir)
+	- wie codiert in wörter
+
+speziell 2.4.:
+Position (n-dimension fähigkeit ist toll)
+
+speziell 2.5:
+Bewegungstunnel(große Bewegung die alles zsm fasst)
+
