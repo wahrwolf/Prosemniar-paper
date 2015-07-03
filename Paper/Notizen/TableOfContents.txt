@@ -7,7 +7,7 @@
 1.0	Einleitung					1
 
 2.0	Definitionen der Datenstrukturen
-	2.1 	ControlSet 
+	2.1 ControlSet 
 	2.2	Bewegung
 	2.3	Bewegungserzeuger
 	2.4	Position
