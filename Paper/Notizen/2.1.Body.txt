@@ -9,7 +9,7 @@ conveys information in the most effective way for communication:
 	für alle punkte in 2.0:
 	- darstelllungs-was es modelliert
 	-nutzung(wozu brauchen wir)
-	- wie codiert in wörter
+	- wie codiert in wörter (modell(tunnel) im vgl. zum code)
 
 
 2.0	Definitionen der Datenstrukturen
@@ -19,5 +19,9 @@ Ein Control Set ist eine Menge von allen möglichen Bewegungen, die Minimalisier
 Dadurch sind die Bewegungen nicht subsituierbar durch andere Bewegunge im Set.
 
 Das Control Set wird von suchbasierten Algorithmen genutzt.
-An Zeit und Rechenaufwand wird für die lokale Plannung  gesparrt, weil das erstellen eines Control Sets einmalig ist und das Set wieder verwendbar ist.
-Weitere Nutzen des Control Sets wird im Paper von Pivtoraiko und Kelly() erwähnt.
+Ein Grund für die Nutzung des Control Sets wäre, dass an Zeit und Rechenaufwand für die lokale Plannung  gesparrt wird, weil das erstellen eines Control Sets einmalig ist und das Set wieder verwendbar ist.
+Weitere Nutzen des Control Sets werden im Paper von Pivtoraiko und Kelly(2005) erwähnt.
+
+Im Code wird das Control Set als eine Map von Positionen und Bewegungen implementiert. Bei der Erzeugung eines Control Sets wird auf den Bewegungserzeuger und einem Intervall, den man selbst bestimmt, geachtet. 
+Bei der Nutzung des Control Sets ist es Vorteilhaft, dass die Bewegungen in dieser Art Abgespeichert werden, weil man sich schnell und gezielt Bewegungen in Abhängigkeit der Position aus dem Control Set aufrufen kann.
+Auch ist das Control Set abhängig von den Eingaben des Bewegungserzeuger, was dem Nutzer die Freiheit gibt, den Code anzupassen. Zum Beispiel kann der Benutzer zwei Control Set generieren lassen mit unterschiedlichen Bewegungserzeugern und den selben Intervall und diese miteinander vergleichen.
