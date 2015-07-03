@@ -17,3 +17,7 @@ conveys information in the most effective way for communication:
 
 Ein Control Set ist eine Menge von allen möglichen Bewegungen, die Minimalisiert und Zerteilt wurden.
 Dadurch sind die Bewegungen nicht subsituierbar durch andere Bewegunge im Set.
+
+Das Control Set wird von suchbasierten Algorithmen genutzt.
+An Zeit und Rechenaufwand wird für die lokale Plannung  gesparrt, weil das erstellen eines Control Sets einmalig ist und das Set wieder verwendbar ist.
+Weitere Nutzen des Control Sets wird im Paper von Pivtoraiko und Kelly() erwähnt.

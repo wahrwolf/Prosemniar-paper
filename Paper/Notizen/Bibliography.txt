@@ -1,0 +1,1 @@
+M. Pivtoraiko, A. Kelly, Generating near minimal spanning control sets for constrained motion planning in discrete state spaces, In Proceedings of the 2005 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2005), 2005, pp. 3231–3237. 
