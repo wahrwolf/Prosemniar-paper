@@ -6,9 +6,14 @@ import java.util.Set;
 public class Position
 {
 	private Map<String,Double> _values;
-	private Map<String,Double> _toleranzen;
+	protected Map<String,Double> _toleranzen;
 	//Prefix for User Defined Dimension wich doesnt effect totalLength!
 	public final  static String UDD_PREFIX="UDD_";
+	
+	protected Position()
+	{
+		
+	}
 	
 	public Position(Map<String,Double> values,Map<String,Double> toleranzen)
 	{
@@ -39,7 +44,7 @@ public class Position
 	{
 		return _values;
 	}
-	public double getValue(String dim)
+	public Double getValue(String dim)
 	{
 		return _values.get(dim);
 	}
@@ -94,6 +99,9 @@ public class Position
 	
 	public static Position add(Position a, Position b)
 	{
+		if(a instanceof NeutralePosition) return b;
+		if(b instanceof NeutralePosition) return a;
+		
 		Map<String,Double> values= new HashMap<>();
 		values.putAll(a.getValues());
 		

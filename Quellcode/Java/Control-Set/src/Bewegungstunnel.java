@@ -58,4 +58,20 @@ public class Bewegungstunnel {
 		//To-Do Implementieren !!!
 		return null;
 	}
+	
+	public Bewegung getKuerzestenWeg()
+	{
+		Bewegung puffer=null;
+		for (Bewegung bew: _content)
+		{
+			if(puffer==null)
+			{
+				puffer = bew;
+			}else if(puffer.geometrischeLaenge() > bew.geometrischeLaenge())
+			{
+				puffer = bew;
+			}
+		}
+		return puffer;
+	}
 }

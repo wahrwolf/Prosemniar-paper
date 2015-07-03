@@ -1,5 +1,5 @@
+import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -8,10 +8,14 @@ public class ControlSet{
 
 	Map<Position, Bewegung> _movements;
 
-public static ControlSet generateControlSet(Set<BewegungsErzeuger> bewFactories, int intervall, Map<String, Double> toleranzen)
+public ControlSet(Map<Position, Bewegung> movements) {
+	_movements=movements;
+}
+
+public ControlSet (Set<BewegungsErzeuger> bewFactories, int intervall)
 {
 	//erzeuge alle möglichen Bewegungen
-	Set<Bewegung> alleBewegungen;
+	Set<Bewegung> alleBewegungen=new HashSet<>();
 
 	for(BewegungsErzeuger factory: bewFactories)
 	{
@@ -20,7 +24,7 @@ public static ControlSet generateControlSet(Set<BewegungsErzeuger> bewFactories,
 
 	//Fasse Bewegungen zu Tunneln zusammen
 
-	Map<Position, Set<Bewegung >> endPunkte;
+	Map<Position, Set<Bewegung >> endPunkte = new HashMap<>();
 
 	for(Bewegung bewegung: alleBewegungen)
 	{
@@ -34,7 +38,7 @@ public static ControlSet generateControlSet(Set<BewegungsErzeuger> bewFactories,
 		alleBewegungen.remove(bewegung);
 	}
 
-	Map<Position, Bewegungstunnel> moeglicheBewegungsTunnel;
+	Map<Position, Bewegungstunnel> moeglicheBewegungsTunnel = new HashMap<>();
 
 	for(Set<Bewegung> bewegungen: endPunkte.values())
 	{
@@ -55,28 +59,35 @@ public static ControlSet generateControlSet(Set<BewegungsErzeuger> bewFactories,
 	}
 
 	//Normalisieren der übrigen Tunnel
+	
+	_movements = new HashMap<>();
 
 	for(Bewegungstunnel tunnel :sortedTunnel)
 	{
-		//ToDo besser ausformulieren und impl
-
-		//wähle bewegung die am dichtesten am mittlweg ist aus
-		//füge bewegung + end pos zum control-set hinzu
+		Bewegung shortestMovment=tunnel.getKuerzestenWeg();
+		_movements.put(shortestMovment.getEndPosition(), shortestMovment);
 	}
 
-	return null;
 
 
 }
 
-private static boolean endeIstErreichbar(Bewegungstunnel tunnel, Set<Bewegungstunnel> subTunnels)
+private boolean endeIstErreichbar(Bewegungstunnel tunnel, Set<Bewegungstunnel> subTunnels)
 {
 	for(Bewegungstunnel subTunnel: subTunnels)
 	{
-		//ToDo rekursive Prüffunktion !!!
+		boolean endeIstErreicht=false;
+		Set<Bewegungstunnel> geprüfteTunnel = new HashSet<>();
+		
+		while(!endeIstErreicht)
+		{
+			
+		}
 	}
 	return false;
 }
+
+
 
 
 
