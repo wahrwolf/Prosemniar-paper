@@ -1,0 +1,34 @@
+presents the information from your research, both real world and theoretical, or your design
+organises information logically under appropriate headings
+conveys information in the most effective way for communication:
+
+    uses figures and tables
+    can use bulleted or numbered lists
+    can use formatting to break up large slabs of text
+
+	für alle punkte in 2.0:
+	- darstelllungs-was es modelliert
+	-nutzung(wozu brauchen wir)
+	- wie codiert in wörter
+
+2.0 Definition der Datenstrukturen
+	2.3 Bewegungserzeuger
+
+Unter dem Konzept der Bewegungserzeuger versuchen wir in unserem Modell alle Möglichkeiten eines Agenten eine Bewegung zu erzeugen zu modellieren.
+
+Ein Bewegungserzeuger zeichnet sich dadurch aus, dass er eine endliche Menge von Bewegungen erzeugen kann. 
+
+Hierbei haben wir die Implementation bewusst frei gelassen, um eine maximale Anpassung zu erlauben.
+
+In unserem Konzept definiert man für einen Agenten einen sinnvollen Bewegungserzeuger (z.B. einen Motor) und kann danach nur noch die allgemeinere Bewegung benutzen.
+
+Insbesondere bei Austausch des Antriebssystem kann die komplette Plannung (solnage sie auf Control-Sets beruht) beibehalten werden. Es muss lediglich ein anderer Bewegungserzeuger benutzt werden.
+
+In unserem Modell ist ein Agent nichts weiter als eine Menge von Bewegungserzeugern, mit denen er sich fortbewegt.
+
+Diese Erzeuger stellen die Gesamtmenge an Bewegungen dar.
+
+In dem Algorithmus entsteht aus genau dieser großen Menge nachher das Control-Set.
+
+In unserer Implementation handelt existiert lediglich ein Interface (siehe oben).
+

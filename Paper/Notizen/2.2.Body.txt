@@ -1,0 +1,34 @@
+presents the information from your research, both real world and theoretical, or your design
+organises information logically under appropriate headings
+conveys information in the most effective way for communication:
+
+    uses figures and tables
+    can use bulleted or numbered lists
+    can use formatting to break up large slabs of text
+
+	für alle punkte in 2.0:
+	- darstelllungs-was es modelliert
+	-nutzung(wozu brauchen wir)
+	- wie codiert in wörter
+
+2.0 Definition der Datenstrukturen
+	2.2 Bewegung
+
+
+Die Bewegung stellt eine abstrahierte "Bewegung" wie sie auch natursprachlich verwendet wird dar. In unserem Modell wird jede Bewegung von etwas erzeugt (siehe Bewegungserzeuger) und kann beliebig oft reproduziert werden.
+
+Außerdem hat sie eine variable Startposition und einen davon abhängigen Verlauf.
+
+Für ein Control-Set ist eine Bewegung die elementare Datenstruktur
+
+In unserer Implementation ist hat eine Bewegung einen relativen Verlauf, einen Erzeuger samt Erzeuger-Argumente und eine Start Position.
+
+Mithilfe des Erzeugers kann die Bewegung tatsächlich von einem Agenten "ausgeführt" werden.
+
+Der relative Verlauf ist eine Liste, in der jeder Eintrag einem "Zwischenstopp" entspricht.
+
+Jeder Eintrag besteht aus einer Berechnung für jede Dimension in der sich etwas ändert.
+
+(Das Konzept der Dimensionen in underem Modell wird 2.4 näher erläutert)
+
+Mit dieser Abstraktion kann der Verlauf von einer Bewegung mit einem beliebigen Startpunkt berechnet werden.
