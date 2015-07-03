@@ -18,10 +18,5 @@ public class NeutralePosition extends Position {
 	{
 		return 0.0;
 	}
-	
-	public Map<String, Double> getToleranzen()
-	{
-		return _toleranzen;
-	}
 
 }

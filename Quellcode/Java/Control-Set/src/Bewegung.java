@@ -11,6 +11,7 @@ public class Bewegung {
 	public static final String ADDITION_FORMAT="";
 	public static final String SUBSTRAKION_FORMAT="";
 	public static final String KLAMMER_FORMAT="";
+	public static final String MODULO_FORMAT="";
 	
 	
 	
@@ -20,7 +21,7 @@ public class Bewegung {
 	private BewegungsErzeuger _erzeuger;
 	private Object _erzeugerArg;
 	
-	private NeutralePosition _startPosition;
+	private Position _startPosition;
 	private List<Map<String, String>> _relativerVerlauf;
 	int _laenge;
 	
@@ -44,6 +45,11 @@ public class Bewegung {
 	public Position getStartPosition()
 	{
 		return _startPosition;
+	}
+	
+	public void setStartPosition(Position neuerStart)
+	{
+		_startPosition = neuerStart;
 	}
 	
 	public List<Position> getVerlauf()
@@ -97,6 +103,9 @@ public class Bewegung {
 			return parseSchritt(faktor[0], pos) /  parseSchritt(faktor[1], pos);
 		} else if (formula.matches(KLAMMER_FORMAT)){
 			return parseSchritt(formula.substring(1, formula.length()-1), pos);
+		} else if (formula.matches(MODULO_FORMAT)){
+			String faktor[]=formula.split("%");
+			return parseSchritt(faktor[0], pos) %  parseSchritt(faktor[1], pos);
 		}
 	
 		

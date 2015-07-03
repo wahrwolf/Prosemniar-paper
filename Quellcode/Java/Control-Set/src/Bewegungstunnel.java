@@ -6,7 +6,6 @@ public class Bewegungstunnel {
 
 	private Set<Bewegung> _content;
 	private Position _endPosition;
-	private Position _startPosition;
 	
 	Map<String, Double[]> _borders;
 	private final int INDEX_MAX=1;
@@ -17,8 +16,7 @@ public class Bewegungstunnel {
 		_content = content;
 		if (!content.isEmpty())
 		{
-			_startPosition=content.iterator().next().getStartPosition();
-			_endPosition=content.iterator().next().getStartPosition();
+			_endPosition=content.iterator().next().getEndPosition();
 		}
 		for(Bewegung bew : _content)
 		{
@@ -45,7 +43,19 @@ public class Bewegungstunnel {
 	
 	public boolean containsPosition(Position pos)
 	{
-		return _content.contains(pos);
+		for(String key:pos.keySet())
+		{
+			if(_borders.get(key)!= null)
+			{
+				Double posValue = pos.getValue(key);
+				Double max = _borders.get(key)[INDEX_MAX];
+				Double min = _borders.get(key)[INDEX_MIN];
+				if (posValue > max || posValue < min) return false;
+			}else{
+				return false;
+			}
+		}
+		return true;
 	}
 	
 	public Position getEndPosition()
@@ -58,6 +68,7 @@ public class Bewegungstunnel {
 		//To-Do Implementieren !!!
 		return null;
 	}
+	
 	
 	public Bewegung getKuerzestenWeg()
 	{
@@ -73,5 +84,14 @@ public class Bewegungstunnel {
 			}
 		}
 		return puffer;
+	}
+	
+	public void setStartPosition(Position neuerStart)
+	{
+		for (Bewegung bew: _content)
+		{
+			bew.setStartPosition(neuerStart);
+		}
+		if (!_content.isEmpty()) _endPosition=_content.iterator().next().getEndPosition();
 	}
 }

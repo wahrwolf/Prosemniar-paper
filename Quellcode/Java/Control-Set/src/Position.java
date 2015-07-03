@@ -15,6 +15,11 @@ public class Position
 		
 	}
 	
+	public Map<String, Double> getToleranzen()
+	{
+		return _toleranzen;
+	}
+	
 	public Position(Map<String,Double> values,Map<String,Double> toleranzen)
 	{
 		this(toleranzen);
@@ -109,7 +114,7 @@ public class Position
 		{
 			if(!b.keySet().contains(dim))
 			{
-				values.put(dim, b.getValue(dim));;
+				values.put(dim, b.getValue(dim));
 			}else{
 				values.put(dim, values.get(dim)+b.getValue(dim));
 			}
