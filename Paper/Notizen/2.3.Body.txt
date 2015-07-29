@@ -20,9 +20,9 @@ Ein Bewegungserzeuger zeichnet sich dadurch aus, dass er eine endliche Menge von
 
 Hierbei haben wir die Implementation bewusst frei gelassen, um eine maximale Anpassung zu erlauben.
 
-In unserem Konzept definiert man für einen Agenten einen sinnvollen Bewegungserzeuger (z.B. einen Motor) und kann danach nur noch die allgemeinere Bewegung benutzen.
+In unserem Konzept definiert man für einen Agenten einen sinnvollen Bewegungserzeuger (z.B. einen Motor) und kann danach nur noch die allgemeinere Klassen "Bewegung" benutzen.
 
-Insbesondere bei Austausch des Antriebssystem kann die komplette Plannung (solnage sie auf Control-Sets beruht) beibehalten werden. Es muss lediglich ein anderer Bewegungserzeuger benutzt werden.
+Insbesondere bei Austausch des Antriebssystem kann die komplette Plannung (solange sie auf Control-Sets beruht) beibehalten werden. Es muss lediglich ein anderer Bewegungserzeuger benutzt werden.
 
 In unserem Modell ist ein Agent nichts weiter als eine Menge von Bewegungserzeugern, mit denen er sich fortbewegt.
 
@@ -30,5 +30,7 @@ Diese Erzeuger stellen die Gesamtmenge an Bewegungen dar.
 
 In dem Algorithmus entsteht aus genau dieser großen Menge nachher das Control-Set.
 
-In unserer Implementation handelt existiert lediglich ein Interface (siehe oben).
+In unserer Implementation existiert lediglich ein Interface (siehe oben).
+
+Das Zusammenspiel von Bewegung und Bewegungserzeuger enstspricht der Fabrikmethode nach GoF (#referenz). 
 

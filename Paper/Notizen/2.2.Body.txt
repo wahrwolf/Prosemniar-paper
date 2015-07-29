@@ -21,7 +21,7 @@ Außerdem hat sie eine variable Startposition und einen davon abhängigen Verlau
 
 Für ein Control-Set ist eine Bewegung die elementare Datenstruktur
 
-In unserer Implementation ist hat eine Bewegung einen relativen Verlauf, einen Erzeuger samt Erzeuger-Argumente und eine Start Position.
+In unserer Implementation hat eine Bewegung einen relativen Verlauf, einen Erzeuger samt Erzeuger-Argumente und eine Start Position.
 
 Mithilfe des Erzeugers kann die Bewegung tatsächlich von einem Agenten "ausgeführt" werden.
 
