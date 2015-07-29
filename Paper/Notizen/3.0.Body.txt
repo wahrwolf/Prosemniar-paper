@@ -1,0 +1,20 @@
+presents the information from your research, both real world and theoretical, or your design
+organises information logically under appropriate headings
+conveys information in the most effective way for communication:
+
+    uses figures and tables
+    can use bulleted or numbered lists
+    can use formatting to break up large slabs of text
+
+	punkte in 3.0:
+	- darstelllungs-was es modelliert(?)
+	+ wie codiert in wörter
+	wo ist dsa interval definiert?
+
+3.0 Implementation des generateControlSet
+
+Ein Control-Set besteht aus Bewegungen, die in einer Map abgespeichert sind. Um eine bestimmte Bewegung aufzurufen, wird eine Position angegeben und die Bewegung wird ausgegeben.
+
+Zu erst werden alle Bewegungen erzeugt und als eine Menge von Bewegungen abgespeichert.
+Für diese werden, wenn sie eine bestimmter Länge (die entwerder kleiner oder gleich dem bestimmten Intervall) haben, Endpunkte berechnet, die wieder als eine Menge von Bewegungen abgespeichert werden.
+Daraus lassen sich potenziele Bewegungstunnel finden.
