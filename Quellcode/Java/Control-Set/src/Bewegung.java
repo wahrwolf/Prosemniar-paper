@@ -23,7 +23,6 @@ public class Bewegung {
 	
 	private Position _startPosition;
 	private List<Map<String, String>> _relativerVerlauf;
-	int _laenge;
 	
 	public Position getEndPosition()
 	{
@@ -39,7 +38,7 @@ public class Bewegung {
 	
 	public int getEntfernung()
 	{
-		return _laenge;
+		return (int) geometrischeLaenge();
 	}
 	
 	public Position getStartPosition()
