@@ -20,8 +20,7 @@ Die Bewegung stellt eine abstrahierte "Bewegung" wie sie auch natursprachlich ve
 Außerdem hat sie eine variable Startposition und einen davon abhängigen Verlauf.
 
 Für ein Control-Set ist eine Bewegung die elementare Datenstruktur
-
-In unserer Implementation ist hat eine Bewegung einen relativen Verlauf, einen Erzeuger samt Erzeuger-Argumente und eine Start Position.
+in unserer Implementation hat eine Bewegung einen relativen Verlauf, einen Erzeuger samt Erzeuger-Argumente und eine Start Position.
 
 Mithilfe des Erzeugers kann die Bewegung tatsächlich von einem Agenten "ausgeführt" werden.
 
@@ -30,4 +29,6 @@ Der relative Verlauf ist eine Liste, in der jeder Eintrag einem "Zwischenstopp" 
 Jeder Eintrag besteht aus einer Berechnung für jede Dimension in der sich etwas ändert.
 
 (Das Konzept der Dimensionen in underem Modell wird 2.4 näher erläutert)
+
+Mit dieser Abstraktion kann der Verlauf von einer Bewegung mit einem beliebigen Startpunkt berechnet werden.
 

@@ -10,15 +10,15 @@ In diesem Report wird ein Control Set, dass nach dem von Mihail Pivtoraiko and A
 in dem Paper: Generating Near Minimal Spanning Control Sets for Constrained Motion Planning in
 Discrete State Spaces, erstellt.
 
-Der Code ist abstrakt, um ihn eine Anpassungsfähigkeit an Roboterbewegungen in n-Dimensionen zu geben.
+Der Code ist abstrakt, um ihn eine AnpassungsfÃ¤higkeit an Roboterbewegungen in n-Dimensionen zu geben.
 Es werden Informationen 
-(alle vorhanden Bwegungserzeuger als Set, die Toleranzen, ...) des nutzenden Roboters benötigt.
+(alle vorhanden Bwegungserzeuger als Set, die Toleranzen, ...) des nutzenden Roboters benÃ¶tigt.
 Die Bewegungen werden mit einer vorher bestimmten Entfernung erstellt und als eine Liste von 
 Positionen abgespeichert, somit erhalten wir eine Diskretisierung der Pfade. 
 In jeder dieser Positionen wird der Wert und die Toleranz gespeichert.
-Mithilfe von "Bewegungstunnel" werden die Bewegungen auf Äquivalenz geprüft
+Mithilfe von "Bewegungstunnel" werden die Bewegungen auf Ã„quivalenz geprÃ¼ft
 und ggf. zerlegt.
 So erhalten wir die Menge an atomaren Bewegungen (also solche die nicht durch andere substituierbar sind).
-Diese Menge ist identisch mit dem im Artikel erwähnten Control-Set.
+Diese Menge ist identisch mit dem im Artikel erwÃ¤hnten Control-Set.
 
 ""Conclusion fehlt""
