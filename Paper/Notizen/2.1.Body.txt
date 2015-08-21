@@ -15,19 +15,19 @@ conveys information in the most effective way for communication:
 2.0	Definitionen der Datenstrukturen
 	2.1 	ControlSet 
 
-Ein Control Set ist eine Menge von allen möglichen Bewegungen, die Minimalisiert und Zerteilt wurden.
+Ein Control-Set ist eine Menge von allen möglichen Bewegungen, die minimalisiert und zerteilt wurden.
 Dadurch sind die Bewegungen nicht subsituierbar durch andere Bewegunge im Set.
+Das Control-Set wird von suchbasierten Algorithmen(Erläuterung!) genutzt.
 
-Das Control Set wird von suchbasierten Algorithmen genutzt.
-Ein Grund für die Nutzung des Control Sets wäre, dass an Zeit und Rechenaufwand für die lokale Plannung  gesparrt wird, weil das erstellen eines Control Sets einmalig ist und das Set wieder verwendbar ist.
-Weitere Nutzen des Control Sets werden im Paper #VERWEIS_HIER erwähnt.
+Ein Grund für die Nutzung des Control-Sets ist, dass an Zeit und Rechenaufwand für die lokale Plannung gespart wird, weil das Erstellen eines Control-Sets nur einmalig notwendig ist und dieses wiederverwendbar ist.
+Weitere Nutzen des Control-Sets werden im Paper erwähnt.
 
-Im Code wird das Control Set als eine Map von Positionen und Bewegungen implementiert. 
+Im Code wird das Control-Set als eine Map von Positionen und Bewegungen implementiert. 
 
-Bei der Erzeugung eines Control Sets wird auf den Bewegungserzeuger und einem Intervall, den man selbst bestimmt, geachtet. 
+Bei der Erzeugung eines Control-Sets wird auf den Bewegungserzeuger und einem Intervall, den man selbst bestimmt, geachtet. 
 
-Bei der Nutzung des Control Sets ist es Vorteilhaft, dass die Bewegungen in dieser Art Abgespeichert werden, weil man sich schnell und gezielt Bewegungen in Abhängigkeit der Position aus dem Control Set aufrufen kann.
+Bei der Nutzung des Control-Sets ist es Vorteilhaft, dass die Bewegungen in dieser Art Abgespeichert werden, weil man sich schnell und gezielt Bewegungen in Abhängigkeit der Position aus dem Control-Set abrufen kann.
 
-Auch ist das Control Set abhängig von den Bewegungserzeugern, was dem Nutzer die Freiheit gibt, den Code anzupassen.
+Auch ist das Control-Set abhängig von den Bewegungserzeugern, was dem Nutzer die Freiheit gibt, den Code anzupassen.
 
- Zum Beispiel kann der Benutzer zwei Control Set generieren lassen mit unterschiedlichen Bewegungserzeugern und den selben Intervall und diese miteinander vergleichen.
+ Zum Beispiel kann der Benutzer zwei Control-Set generieren lassen mit unterschiedlichen Bewegungserzeugern und den selben Intervall und diese miteinander vergleichen.

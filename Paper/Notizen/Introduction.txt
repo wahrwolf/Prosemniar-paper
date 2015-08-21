@@ -10,20 +10,22 @@
 
 1.Einleitung
 
-Um Wegfindungsalgorithmen auf Bewegungsprimitiven, unter Beachtung von nichtholonomen Bewegungen, zu verwenden,
-müssen diese Restriktionen für den Algorithmus definiert werden. Das zu erzeugende "Control-Set" stellt die Menge aller Bewegungen dar,
-die das nichtholonomische Konstrukt fähig ist. Alle weiteren Wegfindungsalgorithmen können mithilfe des Sets
-die Nichtholonomintät des Konstruktes einbeziehen.
+Um Wegfindungsalgorithmen auf Bewegungsprimitiven, unter Beachtung von Restriktionen zu verwenden,
+müssen diese für den Algorithmus definiert werden. Das zu erzeugende "Control-Set" stellt die Menge aller Bewegungen dar,
+die der nichtholonomische Agent fähig ist. Alle weiteren Wegfindungsalgorithmen können mithilfe des Sets
+die Nichtholonomintät des Agenten einbeziehen.
 
-Der Report handelt sich um die Implementation des Codes mit dem solch ein Control Set,(...?), erstellt wird.
+Der Report beschäftigt sich mit der Implementation des Codes mit dem solch ein Control-Set,(...?<--Herausforderungen), erstellt werden kann.
 
+Im folgenden Paper erläutern wir erst die erfolderlichen Modellen und ihrer Umsetzung (Abschnitt 2) um dann die Implementation des von Pivtoraiko und Kelly [1] vorgeschlagenen Algorithmus zu beschäftigen (Abschnitt 3). Dabei gehen wir jeweils zunächst auf die Modellierung ein und erläutern die Verwendung im Bezug zum Control-Set.
+Im Anschluss befassen wir uns mit den implementationstechnischen Feinheiten dieser Modelle.
+______________________________________________________________
+old:
+(zeile 20-22)
 Zuerst werden die einzelnen Datenstrukturen definiert, was sie modellieren, wofür sie genutzt werden, wie sie implementiert wurden.
 Darauf folgt die Implementation der Methoden generateControlSet und generateNodeMap.
 Im Anschluss ist eine Auswertung der Vorgehensweise des Codes. (präziser- später, wenn unsere auswertung steht)
-
-
-________________________________________________________________________________
-
+_______________________________________________________________________
 
 suchbasiertes planen mit bewegungsprimitiven
 benötigt control set
