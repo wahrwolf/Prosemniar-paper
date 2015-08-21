@@ -11,28 +11,28 @@
 1.Einleitung
 
 Um Wegfindungsalgorithmen auf Bewegungsprimitiven, unter Beachtung von Restriktionen zu verwenden,
-müssen diese für den Algorithmus definiert werden. Das zu erzeugende "Control-Set" stellt die Menge aller Bewegungen dar,
-die der nichtholonomische Agent fähig ist. Alle weiteren Wegfindungsalgorithmen können mithilfe des Sets
-die Nichtholonomintät des Agenten einbeziehen.
+mÃ¼ssen diese fÃ¼r den Algorithmus definiert werden. Das zu erzeugende "Control-Set" stellt die Menge aller Bewegungen dar,
+die der nichtholonomische Agent fÃ¤hig ist. Alle weiteren Wegfindungsalgorithmen kÃ¶nnen mithilfe des Sets
+die NichtholonomintÃ¤t des Agenten einbeziehen.
 
-Der Report beschäftigt sich mit der Implementation des Codes mit dem solch ein Control-Set,(...?<--Herausforderungen), erstellt werden kann.
+Der Report beschÃ¤ftigt sich mit der Implementation des Codes mit dem solch ein Control-Set,(...?<--Herausforderungen), erstellt werden kann.
 
-Im folgenden Paper erläutern wir erst die erfolderlichen Modellen und ihrer Umsetzung (Abschnitt 2) um dann die Implementation des von Pivtoraiko und Kelly [1] vorgeschlagenen Algorithmus zu beschäftigen (Abschnitt 3). Dabei gehen wir jeweils zunächst auf die Modellierung ein und erläutern die Verwendung im Bezug zum Control-Set.
+Im folgenden Paper erlÃ¤utern wir erst die erfolderlichen Modellen und ihrer Umsetzung (Abschnitt 2) um dann die Implementation des von Pivtoraiko und Kelly [1] vorgeschlagenen Algorithmus zu beschÃ¤ftigen (Abschnitt 3). Dabei gehen wir jeweils zunÃ¤chst auf die Modellierung ein und erlÃ¤utern die Verwendung im Bezug zum Control-Set.
 Im Anschluss befassen wir uns mit den implementationstechnischen Feinheiten dieser Modelle.
 ______________________________________________________________
 old:
 (zeile 20-22)
-Zuerst werden die einzelnen Datenstrukturen definiert, was sie modellieren, wofür sie genutzt werden, wie sie implementiert wurden.
+Zuerst werden die einzelnen Datenstrukturen definiert, was sie modellieren, wofÃ¼r sie genutzt werden, wie sie implementiert wurden.
 Darauf folgt die Implementation der Methoden generateControlSet und generateNodeMap.
-Im Anschluss ist eine Auswertung der Vorgehensweise des Codes. (präziser- später, wenn unsere auswertung steht)
+Im Anschluss ist eine Auswertung der Vorgehensweise des Codes. (prÃ¤ziser- spÃ¤ter, wenn unsere auswertung steht)
 _______________________________________________________________________
 
 suchbasiertes planen mit bewegungsprimitiven
-benötigt control set
+benÃ¶tigt control set
 
 report beschreibt nutzung,implementation, sowie funktionsweise des codes
 
-projekt soll control Sets erstellen können für roboter mit beliebig vielen dimensionen von bewegungen
+projekt soll control Sets erstellen kÃ¶nnen fÃ¼r roboter mit beliebig vielen dimensionen von bewegungen
 
 necessary technical background needed: basic programming skills----
 
