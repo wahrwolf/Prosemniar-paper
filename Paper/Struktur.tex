@@ -1,45 +1,49 @@
 %%This is a very basic article template.
 %%There is just one section and two subsections.
-\documentclass[11pt,a4paper,oneside]{report}
+\documentclass[11pt,a4paper,oneside]{article}
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{verbatim}
 
-\begin{document}
-
-
 \input{Latex/Inhalt/Titleblatt.tex}
 
-\section*{Zusammenfassung}
+\begin{document}
+
+\maketitle 
+\pagebreak
+
+\section{Zusammenfassung}
 \input{Notizen/Summary.txt}
 
-\section*{Einleitung}
+\section{Einleitung}
 \input{Notizen/Introduction.txt}
+\pagebreak
 
 \tableofcontents
+\pagebreak
 
-\section*{2.0. Definitionen der Datenstrukturen}
+\section{2.0. Definitionen der Datenstrukturen}
 
-\subsection*{2.1. Control-Set}
+\subsection{2.1. Control-Set}
 \input{Notizen/2.1.Body.txt}
-\subsection*{2.2. Bewegung}
+\subsection{2.2. Bewegung}
 \input{Notizen/2.2.Body.txt}
-\subsection*{2.3. Bewegungserzeuger}
+\subsection{2.3. Bewegungserzeuger}
 \input{Notizen/2.3.Body.txt}
-\subsection*{2.4. Position}
+\subsection{2.4. Position}
 \input{Notizen/2.4.Body.txt}
-\subsection*{2.5.Bewegungstunnel}
+\subsection{2.5.Bewegungstunnel}
 \input{Notizen/2.5.Body.txt}
 
-\section*{3.0. Implementation}
+\section{3.0. Implementation}
 \input{Notizen/3.0.Body.txt}
 
-\section*{4.0. Fazit}
+\section{4.0. Fazit}
 
-\section*{5.0. Quellen}
+\section{5.0. Quellen}
 \input{Notizen/Bibliography.txt}
 
-\section*{Appendices}
+\section{Appendices}
 % link zum repo?
 \subsection*{ControlSet.java}
 \subsection*{Bewegung.java}

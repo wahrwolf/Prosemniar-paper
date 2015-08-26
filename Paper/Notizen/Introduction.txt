@@ -1,15 +1,3 @@
-- the background to the topic of your report to set your work in its broad context
-- a clear statement of the purpose of the report, usually to present the results of your
-  research, investigation, or design
-- a clear statement of the aims of the project
-- technical background necessary to understand the report;
-  e.g. theory or assumptions
-- a brief outline of the structure of the report if appropriate 
-  (this would not be necessary in a short report)
-
-
-1.Einleitung
-
 Um Wegfindungsalgorithmen auf Bewegungsprimitiven, unter Beachtung von Restriktionen zu verwenden,
 müssen diese für den Algorithmus definiert werden. Das zu erzeugende "Control-Set" stellt die Menge aller Bewegungen dar,
 die der nichtholonomische Agent fähig ist. Alle weiteren Wegfindungsalgorithmen können mithilfe des Sets
@@ -19,21 +7,3 @@ Der Report beschäftigt sich mit der Implementation des Codes mit dem solch ein 
 
 Im folgenden Paper erläutern wir erst die erfolderlichen Modellen und ihrer Umsetzung (Abschnitt 2) um dann die Implementation des von Pivtoraiko und Kelly [1] vorgeschlagenen Algorithmus zu beschäftigen (Abschnitt 3). Dabei gehen wir jeweils zunächst auf die Modellierung ein und erläutern die Verwendung im Bezug zum Control-Set.
 Im Anschluss befassen wir uns mit den implementationstechnischen Feinheiten dieser Modelle.
-______________________________________________________________
-old:
-(zeile 20-22)
-Zuerst werden die einzelnen Datenstrukturen definiert, was sie modellieren, wofür sie genutzt werden, wie sie implementiert wurden.
-Darauf folgt die Implementation der Methoden generateControlSet und generateNodeMap.
-Im Anschluss ist eine Auswertung der Vorgehensweise des Codes. (präziser- später, wenn unsere auswertung steht)
-_______________________________________________________________________
-
-suchbasiertes planen mit bewegungsprimitiven
-benötigt control set
-
-report beschreibt nutzung,implementation, sowie funktionsweise des codes
-
-projekt soll control Sets erstellen können für roboter mit beliebig vielen dimensionen von bewegungen
-
-necessary technical background needed: basic programming skills----
-
-struktur vorstellen nochmal

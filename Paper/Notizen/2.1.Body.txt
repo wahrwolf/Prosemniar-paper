@@ -1,20 +1,3 @@
-presents the information from your research, both real world and theoretical, or your design
-organises information logically under appropriate headings
-conveys information in the most effective way for communication:
-
-    uses figures and tables
-    can use bulleted or numbered lists
-    can use formatting to break up large slabs of text
-
-	für alle punkte in 2.0:
-	- darstelllungs-was es modelliert
-	-nutzung(wozu brauchen wir)
-	- wie codiert in wörter (modell(tunnel) im vgl. zum code)
-
-
-2.0	Definitionen der Datenstrukturen
-	2.1 	ControlSet 
-
 Ein Control-Set ist eine Menge von allen möglichen Bewegungen, die minimalisiert und zerteilt wurden.
 Dadurch sind die Bewegungen nicht subsituierbar durch andere Bewegunge im Set.
 Das Control-Set wird von suchbasierten Algorithmen(Erläuterung!) genutzt.

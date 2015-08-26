@@ -1,21 +1,3 @@
-presents the information from your research, both real world and theoretical, or your design
-organises information logically under appropriate headings
-conveys information in the most effective way for communication:
-
-    uses figures and tables
-    can use bulleted or numbered lists
-    can use formatting to break up large slabs of text
-
-	für alle punkte in 2.0:
-	- darstelllungs-was es modelliert
-	-nutzung(wozu brauchen wir)
-	- wie codiert in wörter (modell(tunnel) im vgl. zum code)
-
-
-2.0	Definitionen der Datenstrukturen
-	2.4 	Position 
-
-
 Eine Position ist ein benutzerdefinierte Koordinate. Sie enthält, die vom Nutzer gewählten Werte und Vektoren und ist der kleinste Bestandteil einer Bewegung.
 
 Die Position wird für die Definition einer Bewegung verwendet. Sie beinhaltet Informationen wo der Agent sich befindet und in welchem Zustand.
