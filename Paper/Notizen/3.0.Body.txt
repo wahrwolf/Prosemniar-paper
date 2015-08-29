@@ -1,6 +1,6 @@
 Ein Control-Set besteht aus Bewegungen, die in einer Map abgespeichert sind. Um eine bestimmte Bewegung aufzurufen, wird eine Position angegeben und die Bewegung wird ausgegeben.
 
-Zu erst werden alle Bewegungen erzeugt und als eine Menge von Bewegungen abgespeichert.
-Für diese werden, wenn sie eine bestimmter Länge (die entwerder kleiner oder gleich dem bestimmten Intervall) haben, Endpunkte berechnet, die wieder als eine Menge von Bewegungen abgespeichert werden.
+Zu erst werden alle Bewegungen erzeugt und als eine Menge von Bewegungen abgespeichert. Dies ist wie der erwähnte reachability graph in Pivtoraiko und Kellys Paper.
+Für diese werden, wenn sie eine bestimmter Länge, (die entweder kleiner oder gleich dem bestimmten Intervall) haben, Endpunkte berechnet, die wieder als eine Menge von Bewegungen abgespeichert werden. Damit bestimmt man die größe der Pfade im Control-Set und werden in Pivtoraiko und Kellys Paper als Control-Set Radius beschrieben.
 Daraus lassen sich Bewegungstunnel finden. Um abzusichern, dass ein Bewegungstunnel $b{_1}$ nicht weiter zerteilt werden kann, wird $b{_1}$ mit allen anderen Bewegungstunneln verglichen, ob man $b{_1}$ mit einer der anderen Bewegungstunneln den Endpunkt von $b{_1}$ erreichen kann. Wenn dies der Fall ist, wird $b{_1}$ entfernt und der Algorithmus wählt einen weiteren Bewegungstunnel als $b{_1}$ aus der Bewegungstunnel Menge und wiederholt den Vorgang.
 Nun werden noch die übrigen Tunneln Normalisiert, wobei die kürzesten Bewegunge jeder der Tunneln im Control-Set abgespeichert werden.

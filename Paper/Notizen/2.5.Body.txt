@@ -1,10 +1,10 @@
 Wenn man eine Bewegung als einfachen Vektor interpretiert, dann ist ein Bewegungstunnel eine Menge dieser Vektoren.
 
-Diese Tunnel kann man sogar graphisch darstellen, wenn man die Vektorgraphen verbindet.
+Diese Tunnel kann man sogar graphisch darstellen, wenn man die Vektorgraphen verbindet und ähnelt dem path equivalence class in Pivtoraiko und Kelly.
 
 Als spezielle Eigenschaft haben alle Vektoren ein gemeinsamen Startpunkt und einen gemeinsamen Endpunkt.
 
-Um zu prüfen ob ein Bewegung sich in andere zerlegen lässt (wie in PAPER beschrieben) sind Bewegungstunnel hilfreich.
+Um zu prüfen ob ein Bewegung sich in andere zerlegen lässt, nach der Simulations Studie von Pivtoraiko und Kellys path decomposition, sind Bewegungstunnel  hilfreich.
 
 Man muss lediglich überprüfen ob der Tunnel mit anderen Bewegungen "durchquerbar" ist. (siehe Abschnitt 3)
 
