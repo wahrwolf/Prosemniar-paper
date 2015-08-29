@@ -1,0 +1,13 @@
+fazit: 
+
+a) Ziel?
+Unser Ziel war, dass wir ein Control-Set erstellen, nach dem Verfahren von Pivtoraiko und Kelly, mit unerem Code, wobei wir nicht die Information benötigen wollen, welche Parameter oder Variablen eine gültige Bewegung ist.
+
+b) wie erreicht?
+Eine Abstrakte Klasse Bewegungserzeuger musste angelegt werden, da wir nicht wissen, was eine Sinnvolle Bewegung ist. Dies überlassen wir dem Nutzer. Dieser Bewegungserzeuger übergibt uns, alle Möglichkeiten, die der Agent fähig ist, sich fort zu bewegen vom Ausgangspunkt. Somit haben wir alle nötigen Informationen um ein spezifisches Control- Set für diesen Agenten zu erstellen. Nach Pivtoraiko und Kelly haben müssen wir die Bewegungen diskretisieren. Deshalb fordern wir vom Nutzer ein Wert für die Toleranz und das Intervall. Um im nächsten Schritt die Bewegungen zu zerlegen, haben wir das Prinzip von Bewegungstunneln eingeführt. Diese hat die equivalence class von Pivtoraiko und Kelly als Grundidee. Die dadurch gewonnen Repräsentanten der einzelnen Bewegungstunneln sind das Control-Set.
+
+ Dadurch haben wir einerseits einen flexiblen Code erhalten, der n- beliebige Dimensionen von Bewegungen haben kann. Das führt dazu, dass der Nutzer selbst definieren muss, was er eine gültige Bewegung ist und welche Variablen von Nutzen sind. Damit, kann ein Nutzer nach seinen Bedürfnissen, den Code anpassen.
+
+Andererseits, geben wir dem Nutzer wenige Vorgaben, an denen er sich Richten kann. Das kann dazu führen, dass unser Code uneffizient verwendet wird, da keine "default" Bewegung definiert ist.
+
+Ein nächster Schritt wäre, die noch nicht im Code berücktsichtigte Berechnugszeit zu optimieren.
