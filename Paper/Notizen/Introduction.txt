@@ -1,21 +1,16 @@
-Um Wegfindungsalgorithmen auf Bewegungsprimitiven, unter Beachtung von Restriktionen zu verwenden,
-müssen diese für den Algorithmus definiert werden. Das zu erzeugende "Control-Set" stellt die Menge aller Bewegungen dar,
-die der nichtholonomische Agent fähig ist. Alle weiteren Wegfindungsalgorithmen können mithilfe des Sets
-die Nichtholonomintät des Agenten einbeziehen.
+Die meisten Pfadfindungsalgoritmen wie A* und ähnliche arbeiten mit einer Gitter-Repräsentation ihrer Umgebung.
+Die meisten Agenten wie ferngesteuerte Autos oder Quadcopter sind aber nicht in der Lage ihre Umgebung als "Punkte" anzusteuern.
+Um also Pfadfindungsalgoritmen (im folgenden auch als suchbasierte Algorithmen) schlagen Pvitoraiko und Kelly ein Konzept namens "Control-Sets" vor.
+Hierbei versucht man sogenannte "Motionprimitives" zu finden. Gemeint sind die Grundbewegungen, also jene aus denen sich alle anderen Bewegungen zusammensetzen. Da eine "Motionprimitve" also eine kleinstmögliche unteilbare Bewegung ist, werden wir den Begriff "atomare" Bewegung im folgenden synonym verwenden.
 
-Der Report beschäftigt sich mit der Implementation des Codes mit dem solch ein Control-Set,(...?<--Herausforderungen), erstellt werden kann.
+Mithilfe dieser elementaren Bewegungen lässt sich von einem Startpunkt ein Koordinaten-Netz herleiten. Hierfür wird erst jede Bewegung einmal ausgeführt und deren Endpunkte markiert. Anschließend wird von jedem Endpunkt wieder jede Bewegung ausgeführt und so weiter.
+Mit diesem Verfahren erhält man ein beliebig großen Gitter-Netz der Umgebung, auf den nun mit beliebigen suchbasierten Algorithmen weitere Pfadplannung betrieben werden kann.
 
-Im folgenden Paper erläutern wir erst die erfolderlichen Modellen und ihrer Umsetzung (Abschnitt 2) um dann die Implementation des von P<ivtoraiko und Kelly [1] vorgeschlagenen Algorithmus zu beschäftigen (Abschnitt 3). Dabei gehen wir jeweils zunächst auf die Modellierung ein und erläutern die Verwendung im Bezug zum Control-Set.
-Im Anschluss befassen wir uns mit den implementationstechnischen Feinheiten dieser Modelle.
+Wir beschäftigen uns mit der konkreten Implementation eines Control-Set Generators. Aufgrund der Vielfalt an Agenten versuchen wir ein möglichst einfaches Konzept vorzustellen, dass sich für möglichst viele Agenten umsetzten lässt. Um das zu gewährleisten haben wir einige Stellen lediglich als Interface definiert.
+Dahinter steckt die Idee das ein Entwickler unsere Implementation einfach benutzen kann. Deswegen verweisen wir im weiteren auch auf einen möglichen Nutzer. Gemeint ist jemand der den Code für sein Projekt benutzt.
 
+Die größte Herausforderung ergab sich für uns aus genau dieser Kompatibilität. Um sicherzustellen dass alle Agenten den gleichen Code benutzen können mussten wir zum Beispiel ein möglichst einfaches Konzept für die Modelierung n-dimensionaler Position unterbringen.
 
-Die meisten Pfadfindungsalgoritmen wie A* und ähnliche arbeiten mit einer Gitter-Repräsentation ihrer Umgebung während die meisten Agenten wie Drohnen oder Autos ihre Umgebung als Sammlung von pyhsikalischen Werten wie Bodenbeschaffenheit wahrnehmen.
+Im wesentlichen behandeln wir im Kapitel 2 alle Teilprobleme und ihre Bewältigung und im Kapitel 3 den genauen Aufbau des Generators.
 
-Um diese Lücke zu überbrücken
-
---
-#todo motion primitive -> kleinstmögliche unteilbare bewegung -> atomare bewegung
-#einführung von "Nutzer"
-#einführung suchbasierte Algorihmen
-#Umstruckturierung Problem, Paper, Unsere Lösung
-#herausforderung (n-Dim Position)
+Im Anhang folgt der Code unserer Java-Implementation welcher auch in einem öffentlichen GitHub-Repostory zur Verfügung steht.
