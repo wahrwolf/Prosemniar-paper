@@ -16,8 +16,7 @@ In dem Algorithmus entsteht aus genau dieser großen Menge nachher das Control-S
 
 In unserer Implementation existiert lediglich ein Interface (siehe oben).
 
-Das Zusammenspiel von Bewegungserzeuger entspricht der Fabrikmethode nach GoF.
+Das Zusammenspiel von Bewegungserzeuger entspricht der Fabrikmethode nach GoF[2].
 ---
 Problem nach vorne (sehr viele mögliche antriebe)
-literaturverweis GoF
 Beispiel besser integrieren (als eigener Absatz)
