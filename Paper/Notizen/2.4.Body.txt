@@ -17,3 +17,5 @@ In unserem Modell werden alle Bewegungen über ihren Bewegungserzeuger erstellt,
 
 Somit kann jede denkbare Art einer Bewegung modelliert werden.
 
+---
+problem vorweg (zu viele eigenschaften, bewegung)

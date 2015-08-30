@@ -5,11 +5,17 @@ die Nichtholonomintät des Agenten einbeziehen.
 
 Der Report beschäftigt sich mit der Implementation des Codes mit dem solch ein Control-Set,(...?<--Herausforderungen), erstellt werden kann.
 
-Im folgenden Paper erläutern wir erst die erfolderlichen Modellen und ihrer Umsetzung (Abschnitt 2) um dann die Implementation des von Pivtoraiko und Kelly [1] vorgeschlagenen Algorithmus zu beschäftigen (Abschnitt 3). Dabei gehen wir jeweils zunächst auf die Modellierung ein und erläutern die Verwendung im Bezug zum Control-Set.
+Im folgenden Paper erläutern wir erst die erfolderlichen Modellen und ihrer Umsetzung (Abschnitt 2) um dann die Implementation des von P<ivtoraiko und Kelly [1] vorgeschlagenen Algorithmus zu beschäftigen (Abschnitt 3). Dabei gehen wir jeweils zunächst auf die Modellierung ein und erläutern die Verwendung im Bezug zum Control-Set.
 Im Anschluss befassen wir uns mit den implementationstechnischen Feinheiten dieser Modelle.
 
 
-Die meisten Pfadfindungsalgoritmen wie A* und ähnliche arbeiten mit einer Gitter-Repräsentation ihrer Umgebung arbeiten
+Die meisten Pfadfindungsalgoritmen wie A* und ähnliche arbeiten mit einer Gitter-Repräsentation ihrer Umgebung während die meisten Agenten wie Drohnen oder Autos ihre Umgebung als Sammlung von pyhsikalischen Werten wie Bodenbeschaffenheit wahrnehmen.
+
+Um diese Lücke zu überbrücken
 
 --
 #todo motion primitive -> kleinstmögliche unteilbare bewegung -> atomare bewegung
+#einführung von "Nutzer"
+#einführung suchbasierte Algorihmen
+#Umstruckturierung Problem, Paper, Unsere Lösung
+#herausforderung (n-Dim Position)

@@ -9,3 +9,5 @@ Um zu prüfen ob ein Bewegung sich in andere zerlegen lässt, nach der Simulatio
 Man muss lediglich überprüfen ob der Tunnel mit anderen Bewegungen "durchquerbar" ist. (siehe Abschnitt 3)
 
 Es ist auch leicht möglich die Bewegung zu finden, die möglichst dicht in der Mitte liegt. Hiefür wählt man einfach den Vektor mit der kleinsten geometrischen Länge aus.
+---
+allgemeine umformulierungen (...)

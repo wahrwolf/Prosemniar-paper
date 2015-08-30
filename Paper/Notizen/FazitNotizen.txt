@@ -11,3 +11,22 @@ Eine Abstrakte Klasse Bewegungserzeuger musste angelegt werden, da wir nicht wis
 Andererseits, geben wir dem Nutzer wenige Vorgaben, an denen er sich Richten kann. Das kann dazu führen, dass unser Code uneffizient verwendet wird, da keine "default" Bewegung definiert ist.
 
 Ein nächster Schritt wäre, die noch nicht im Code berücktsichtigte Berechnugszeit zu optimieren.
+
+
+#struckturierung von b)
+	Probleme
+		Pos
+			-entferungn
+			-beliebig viele
+		"Bewegung"
+			-abstrakt
+			-relativen Verlauf
+	Lösung
+		Pos als Liste, unterscheidung udd "messbaren"
+		pythagoras über messbare als Länge
+
+		wechsel zu relativen verlauf und fabrikmethode
+
+	etc
+		probleme nicht vohersebar waren,
+		rückbezug zu paper

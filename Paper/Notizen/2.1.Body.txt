@@ -1,5 +1,4 @@
-Ein Control-Set ist eine Menge von allen möglichen Bewegungen, die minimalisiert und zerteilt wurden.
-Dadurch sind die Bewegungen nicht subsituierbar durch andere Bewegunge im Set.
+Ein Control-Set ist eine Menge atomaren Bewegungen, die ein Agent ausführen kann.
 Das Control-Set wird von suchbasierten Algorithmen(Erläuterung!) genutzt.
 
 Ein Grund für die Nutzung des Control-Sets ist, dass an Zeit und Rechenaufwand für die lokale Plannung gespart wird, weil das Erstellen eines Control-Sets nur einmalig notwendig ist und dieses wiederverwendbar ist.
@@ -7,10 +6,16 @@ Weitere Nutzen des Control-Sets werden im Paper erwähnt.
 
 Im Code wird das Control-Set als eine Map von Positionen und Bewegungen implementiert. 
 
-Bei der Erzeugung eines Control-Sets wird auf den Bewegungserzeuger und einem Intervall, den man selbst bestimmt, geachtet. 
+[strange...] Bei der Erzeugung eines Control-Sets wird auf den Bewegungserzeuger und einem Intervall, den man selbst bestimmt, geachtet. 
 
 Bei der Nutzung des Control-Sets ist es Vorteilhaft, dass die Bewegungen in dieser Art Abgespeichert werden, weil man sich schnell und gezielt Bewegungen in Abhängigkeit der Position aus dem Control-Set abrufen kann.
 
 Auch ist das Control-Set abhängig von den Bewegungserzeugern, was dem Nutzer die Freiheit gibt, den Code anzupassen.
 
  Zum Beispiel kann der Benutzer zwei Control-Set generieren lassen mit unterschiedlichen Bewegungserzeugern und den selben Intervall und diese miteinander vergleichen.
+
+---
+Definition
+Problem (was soll es lösen)
+Vorteile von Controll-Sets gegenüber reiner "liste"
+Implementation
