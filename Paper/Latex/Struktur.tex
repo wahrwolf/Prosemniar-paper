@@ -1,0 +1,56 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+\documentclass[11pt,a4paper,oneside]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{verbatim}
+
+\input{Inhalt/Titleblatt.tex}
+
+\begin{document}
+
+\maketitle 
+\pagebreak
+
+\section{Zusammenfassung}
+\input{../Notizen/Summary.txt}
+
+\section*{Einleitung}
+\input{../Notizen/Introduction.txt}
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+\section{Definitionen der Datenstrukturen}
+
+\subsection{ Control-Set}
+\input{../Notizen/2.1.Body.txt}
+\subsection{Bewegung}
+\input{../Notizen/2.2.Body.txt}
+\subsection{Bewegungserzeuger}
+\input{../Notizen/2.3.Body.txt}
+\subsection{Position}
+\input{../Notizen/2.4.Body.txt}
+\subsection{Bewegungstunnel}
+\input{../Notizen/2.5.Body.txt}
+
+\section{Implementation}
+\input{../Notizen/3.0.Body.txt}
+
+\section{ Fazit}
+\input{../Notizen/FazitNotizen.txt}
+
+\section{Quellen}
+\input{../Notizen/Bibliography.txt}
+
+\section{Appendices}
+% link zum repo?
+\subsection*{ControlSet.java}
+\subsection*{Bewegung.java}
+\subsection*{BewegungsErzeuger.java}
+\subsection*{Position.java}
+\subsection*{NeutralePosition.java}
+\subsection*{Bewegungstunnel.java}
+
+\end{document}

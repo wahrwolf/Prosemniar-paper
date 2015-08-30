@@ -13,7 +13,7 @@ Andererseits, geben wir dem Nutzer wenige Vorgaben, an denen er sich Richten kan
 Ein nächster Schritt wäre, die noch nicht im Code berücktsichtigte Berechnugszeit zu optimieren.
 
 
-#struckturierung von b)
+struckturierung von b)
 	Probleme
 		Pos
 			-entferungn
