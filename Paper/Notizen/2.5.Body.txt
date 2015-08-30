@@ -1,6 +1,6 @@
 Wenn man eine Bewegung als einfachen Vektor interpretiert, dann ist ein Bewegungstunnel eine Menge dieser Vektoren.
 
-Diese Tunnel kann man sogar graphisch darstellen, wenn man die Vektorgraphen verbindet und ähnelt dem path equivalence class in Pivtoraiko und Kelly.
+Diese Tunnel kann man sogar graphisch darstellen, wenn man die Vektorgraphen verbindet und ähnelt dem path equivalence class in Pivtoraiko und Kelly[1].
 
 Als spezielle Eigenschaft haben alle Vektoren ein gemeinsamen Startpunkt und einen gemeinsamen Endpunkt.
 

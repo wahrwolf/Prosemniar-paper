@@ -1,1 +1,3 @@
 M. Pivtoraiko, A. Kelly, Generating near minimal spanning control sets for constrained motion planning in discrete state spaces, In Proceedings of the 2005 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2005), 2005, pp. 3231–3237. 
+
+Erich Gamma, Richard Helm, Ralph Johnson, Jon Vlissides, published by Kevin Zhang, Design Patterns, Elements of Reusable Object Oriented Software, letzter Zugriff: 30.08.2015, http://www.uml.org.cn/c++/pdf/DesignPatterns.pdf
