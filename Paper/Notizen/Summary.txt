@@ -1,16 +1,6 @@
-In diesem Report wird ein Control Set, dass nach dem von Mihail Pivtoraiko and Alonzo Kelly vorgestelltem Verfahren,
-in dem Paper: Generating Near Minimal Spanning Control Sets for Constrained Motion Planning in
-Discrete State Spaces, erstellt.
+In diesem Report wird unsere Implementation eines Algorithmus zur Erstellung einer Sammlung von atomare Bewegungen für Agenten, die nur über eine eingeschränkte Bewegungsfreiheit verfügen, erläutert. Hierfür fassen wir zunächst Pfade mit ähnlichem Verlauf zu Gruppen zusammen.
+Anschließend sortieren wir alle nicht atomaren Gruppen aus.
+Im letzen Schritt übernehmen wir die kürzeste Bewegung jeder Gruppe als deren Repräsentant.
+Die Menge der Repräsentanten kann anschließend für verschiedene Pfadfindungsalgorithmen benutzt werden und garantiert dabei dass alle Pfade begehbar sind.
+Der gesamte Algorithmus orientiert sich dabei stark an dem theoretischen Entwurf[1] von Pivtoraiko und Kelly
 
-Der Code ist abstrakt, um ihn eine Anpassungsfähigkeit an Roboterbewegungen in n-Dimensionen zu geben.
-Es werden Informationen 
-(alle vorhanden Bwegungserzeuger als Set, die Toleranzen, ...) des nutzenden Roboters benötigt.
-Die Bewegungen werden mit einer vorher bestimmten Entfernung erstellt und als eine Liste von 
-Positionen abgespeichert, somit erhalten wir eine Diskretisierung der Pfade. 
-In jeder dieser Positionen wird der Wert und die Toleranz gespeichert.
-Mithilfe von "Bewegungstunnel" werden die Bewegungen auf Äquivalenz geprüft
-und ggf. zerlegt.
-So erhalten wir die Menge an atomaren Bewegungen (also solche die nicht durch andere substituierbar sind).
-Diese Menge ist identisch mit dem im Artikel erwähnten Control-Set.
-
-""Conclusion fehlt""

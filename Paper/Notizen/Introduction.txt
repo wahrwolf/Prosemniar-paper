@@ -7,3 +7,9 @@ Der Report beschäftigt sich mit der Implementation des Codes mit dem solch ein 
 
 Im folgenden Paper erläutern wir erst die erfolderlichen Modellen und ihrer Umsetzung (Abschnitt 2) um dann die Implementation des von Pivtoraiko und Kelly [1] vorgeschlagenen Algorithmus zu beschäftigen (Abschnitt 3). Dabei gehen wir jeweils zunächst auf die Modellierung ein und erläutern die Verwendung im Bezug zum Control-Set.
 Im Anschluss befassen wir uns mit den implementationstechnischen Feinheiten dieser Modelle.
+
+
+Die meisten Pfadfindungsalgoritmen wie A* und ähnliche arbeiten mit einer Gitter-Repräsentation ihrer Umgebung arbeiten
+
+--
+#todo motion primitive -> kleinstmögliche unteilbare bewegung -> atomare bewegung
