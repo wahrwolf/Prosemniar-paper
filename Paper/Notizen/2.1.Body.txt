@@ -1,21 +1,18 @@
-Ein Control-Set ist eine Menge atomaren Bewegungen, die ein Agent ausführen kann.
-Das Control-Set wird von suchbasierten Algorithmen(Erläuterung!) genutzt.
+Eines der größten Probleme von autonom navigierenden Systemen ist die Berechnung von Bewegungen zur Laufzeit.
+Da die resultierende Bewegung meist von mehreren äußeren Faktoren wie Bodenbeschaffenheit oder Wetterverhältnissen abhängig sind, ist eine komplette Berechnung aller Bewegungen sehr Speicherlastig.
 
-Ein Grund für die Nutzung des Control-Sets ist, dass an Zeit und Rechenaufwand für die lokale Plannung gespart wird, weil das Erstellen eines Control-Sets nur einmalig notwendig ist und dieses wiederverwendbar ist.
-Weitere Nutzen des Control-Sets werden im Paper erwähnt.
+Eine Alternative dazu ist es Sammlungen an Bewegungen für verschiedene Situationen vorzurechnen und diese Sets während der Laufzeit zur Verfügung zu stellen.
 
-Im Code wird das Control-Set als eine Map von Positionen und Bewegungen implementiert. 
+Mit dem Konzept von Pvitoreiko und Kelly ist es möglich diese Sammlungen von Kontrollbefehlen (engl Control-Sets) als Bewegungsgrundlage zu speichern und trotzdem die volle Beweglichkeit beizubehalten.
 
-[strange...] Bei der Erzeugung eines Control-Sets wird auf den Bewegungserzeuger und einem Intervall, den man selbst bestimmt, geachtet. 
+Genauer ist ein Control-Set die Menge an atomaren Bewegungen die ein Agent in einem gewissen Radius ausführen kann.
 
-Bei der Nutzung des Control-Sets ist es Vorteilhaft, dass die Bewegungen in dieser Art Abgespeichert werden, weil man sich schnell und gezielt Bewegungen in Abhängigkeit der Position aus dem Control-Set abrufen kann.
+Durch den Radius lassen sich verschieden große Bereiche leichter verarbeiten. Ein Mars-Rover könnte mithilfe von 2 Control-Sets mit unterschiedlichem Radius zum Beispiel in einer großen Ebene schnell ein grobmaschiges Koordinaten-Netz erzeugen während er in einer engeren Umgebung auf ein kleines und damit höher auflösendes Netz umschalten könnte.
 
-Auch ist das Control-Set abhängig von den Bewegungserzeugern, was dem Nutzer die Freiheit gibt, den Code anzupassen.
+Im Gegensatz zu Pvitoreiko und Kelly definieren wir zusätzlich dass ein Control-Set immer auch zu einem Satz an Antrieben (auch Bewegungserzeuger) gehört.
 
- Zum Beispiel kann der Benutzer zwei Control-Set generieren lassen mit unterschiedlichen Bewegungserzeugern und den selben Intervall und diese miteinander vergleichen.
+Das ermöglicht es einem Agenten mit mehreren Antrieben während der Laufzeit auf ein anderes Set zu wechseln und so weitere Bewegungsmöglichkeiten zu haben.
 
----
-Definition
-Problem (was soll es lösen)
-Vorteile von Controll-Sets gegenüber reiner "liste"
-Implementation
+Zum Beispiel könnte ein Roboter im Katastrophen-Gebiet sowohl mit Ketten als auch mit Rädern ausgerüstet sein. Hierbei würde der Roboter ein Control-Set für den Ketten- und eines für den Radantrieb haben und könnte situationsbedingt "umschalten".
+
+In unserer Implementation speichern wir das Control-Set konkret als Abbildung einer Position auf eine Bewegung. Dies ermöglicht es sowohl schnell die Bewegung zu einer Position zu finden, als auch Netze nach dem Inverse-Path-Generator von Pvitoreiko und Kelly zu erstellen.

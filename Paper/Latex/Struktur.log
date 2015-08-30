@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.30)  30 AUG 2015 23:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.30)  31 AUG 2015 00:38
 entering extended mode
 **C:/Users/wahrwolf/Documents/Uni/SoSe-15/ProSeminar/Paper/Paper/Latex/Struktur
 .tex
@@ -303,6 +303,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (C:\Users\wahrwolf\Documents\Uni\SoSe-15\ProSeminar\Paper\Paper\Notizen\Summary
 .txt)
+(C:\Users\wahrwolf\Documents\Uni\SoSe-15\ProSeminar\Paper\Paper\Latex\Struktur.
+toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 4.
+)
+\tf@toc=\write3
+ [2]
 (C:\Users\wahrwolf\Documents\Uni\SoSe-15\ProSeminar\Paper\Paper\Notizen\Introdu
 ction.txt
 Overfull \hbox (3.61647pt too wide) in paragraph at lines 9--11
@@ -310,19 +317,12 @@ Overfull \hbox (3.61647pt too wide) in paragraph at lines 9--11
 u-chen wir ein m[]oglichst
  []
 
-[2]) [3]
-(C:\Users\wahrwolf\Documents\Uni\SoSe-15\ProSeminar\Paper\Paper\Latex\Struktur.
-toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 4.
-)
-\tf@toc=\write3
- [4]
+) [3]
 (C:\Users\wahrwolf\Documents\Uni\SoSe-15\ProSeminar\Paper\Paper\Notizen\2.1.Bod
 y.txt
-Overfull \hbox (8.255pt too wide) in paragraph at lines 1--3
-\OT1/cmr/m/n/10.95 Ein Control-Set ist ei-ne Men-ge ato-ma-ren Be-we-gun-gen, d
-ie ein Agent ausf[]uhren
+Overfull \hbox (15.34204pt too wide) in paragraph at lines 14--15
+\OT1/cmr/m/n/10.95 Lauf-zeit auf ein an-de-res Set zu wech-seln und so wei-te-r
+e Be-we-gungsm[]oglichkeiten
  []
 
 )
@@ -333,13 +333,13 @@ Overfull \hbox (0.31339pt too wide) in paragraph at lines 3--4
 nen da-von abh[]angigen
  []
 
-
+[4]
 Overfull \hbox (11.65883pt too wide) in paragraph at lines 14--15
 []\OT1/cmr/m/n/10.95 (Das Kon-zept der Di-men-sio-nen in un-de-rem Mo-dell wird
  2.4 n[]aher erl[]autert) 
  []
 
-[5])
+)
 (C:\Users\wahrwolf\Documents\Uni\SoSe-15\ProSeminar\Paper\Paper\Notizen\2.3.Bod
 y.txt
 Overfull \hbox (0.49582pt too wide) in paragraph at lines 9--10
@@ -349,13 +349,13 @@ Overfull \hbox (0.49582pt too wide) in paragraph at lines 9--10
 
 )
 (C:\Users\wahrwolf\Documents\Uni\SoSe-15\ProSeminar\Paper\Paper\Notizen\2.4.Bod
-y.txt [6])
+y.txt [5])
 (C:\Users\wahrwolf\Documents\Uni\SoSe-15\ProSeminar\Paper\Paper\Notizen\2.5.Bod
 y.txt)
 (C:\Users\wahrwolf\Documents\Uni\SoSe-15\ProSeminar\Paper\Paper\Notizen\3.0.Bod
-y.txt) [7]
+y.txt [6])
 (C:\Users\wahrwolf\Documents\Uni\SoSe-15\ProSeminar\Paper\Paper\Notizen\FazitNo
-tizen.txt [8])
+tizen.txt [7])
 (C:\Users\wahrwolf\Documents\Uni\SoSe-15\ProSeminar\Paper\Paper\Notizen\Bibliog
 raphy.txt)
 Overfull \hbox (69.75764pt too wide) in paragraph at lines 3--46
@@ -368,13 +368,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--46
 
  []
 
-[9]
+[8]
 (C:\Users\wahrwolf\Documents\Uni\SoSe-15\ProSeminar\Paper\Paper\Latex\Struktur.
 aux) ) 
 Here is how much of TeX's memory you used:
  886 strings out of 493921
  12081 string characters out of 3150481
- 64426 words of memory out of 3000000
+ 63426 words of memory out of 3000000
  4181 multiletter control sequences out of 15000+200000
  8811 words of font info for 31 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -385,9 +385,9 @@ mme/Miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/Programme/Miktex/fonts
 sfonts/cm/cmr10.pfb><E:/Programme/Miktex/fonts/type1/public/amsfonts/cm/cmr12.p
 fb><E:/Programme/Miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/Programme/
 Miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on Struktur.pdf (9 pages, 118795 bytes).
+Output written on Struktur.pdf (8 pages, 118484 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
+ 57 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

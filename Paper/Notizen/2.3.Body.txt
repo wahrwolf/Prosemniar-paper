@@ -1,22 +1,12 @@
-Unter dem Konzept der Bewegungserzeuger versuchen wir in unserem Modell alle Möglichkeiten eines Agenten eine Bewegung zu erzeugen zu modellieren.
+Da die Agenten sehr viele verschiedene Antriebe zur verfügung haben, mussten wir ein Konzept zur vereinheitlichung entwickeln.
+Wir haben uns dazu entschloßen die abstrakte Fabrikmethode nach GoF[2] zu benutzen.
+Hierbei stellt die Bewegung das abstrakte Produkt da und der Bewegungserzeuger die abstrakte Fabrik.
+Letztere ist bewusst als Interface gehalten, damit der gesamte Prozess an Abhängigkeiten bewusst zu dem "Nutzer" ausgelagert wird.
 
-Ein Bewegungserzeuger zeichnet sich dadurch aus, dass er eine endliche Menge von Bewegungen erzeugen kann. 
+Unser Bewegungserzeuger zeichnet sich dadurch aus, dass er eine endliche Menge an Bewegungen erstellen kann und jede dieser Bewegungen auch tatsächlich "ausführen" kann.
 
-Hierbei haben wir die Implementation bewusst frei gelassen, um eine maximale Anpassung zu erlauben.
+Wenn man zum Beispiel einen Roboter mit Rädern und einer Lekung hatt, so würde der Treiber der sowohl die Räder als auch die Lenkung ansteuert der Bewegungserzeuger sein.
+Eine mögliche Bewegung wäre ein Tupel aus einer Lenkeinstellung (z.B. in Grad) und einer Zeitangabe wie lange Gas gegeben werden soll.
+Wenn mann davon ausgeht dass die Räder 20 Stellungen und das Gas sekundenweise bis zu 10s am Stück laufen könnte, so ergeben sich 200 mögliche Bewegungen.
 
-In unserem Konzept definiert man für einen Agenten einen sinnvollen Bewegungserzeuger (z.B. einen Motor) und kann danach nur noch die allgemeinere Klassen "Bewegung" benutzen.
-
-Insbesondere bei Austausch des Antriebssystem kann die komplette Plannung (solange sie auf Control-Sets beruht) beibehalten werden. Es muss lediglich ein anderer Bewegungserzeuger benutzt werden.
-
-In unserem Modell ist ein Agent nichts weiter als eine Menge von Bewegungserzeugern, mit denen er sich fortbewegt.
-
-Diese Erzeuger stellen die Gesamtmenge an Bewegungen dar.
-
-In dem Algorithmus entsteht aus genau dieser großen Menge nachher das Control-Set.
-
-In unserer Implementation existiert lediglich ein Interface (siehe oben).
-
-Das Zusammenspiel von Bewegungserzeuger entspricht der Fabrikmethode nach GoF[2].
----
-Problem nach vorne (sehr viele mögliche antriebe)
-Beispiel besser integrieren (als eigener Absatz)
+Der Control-Set Generator wertet alle Bewegungen aus und bestimmt dann daraus die atomaren Bewegungen.
