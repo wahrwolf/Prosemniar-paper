@@ -1,32 +1,36 @@
-fazit: 
+Unser Ziel war es ein Control-Set-Generator nach Pivtoraiko und Kelly \cite{control-set} zu erstellen, der möglichst viele Agenten unterstüzten kann und für einen möglichen Nutzer leicht mit dem eigenen Projekt benutzt werden kann.
 
-a) Ziel?
-Unser Ziel war, dass wir ein Control-Set erstellen, nach dem Verfahren von Pivtoraiko und Kelly, mit unerem Code, wobei wir nicht die Information benötigen wollen, welche Parameter oder Variablen eine gültige Bewegung ist.
+Das generelle Konzept war durch das Paper schon sehr gut vorgegeben, aber wir stellten schnell fest, dass eine so "'offene"' Implementierung sehr viel mehr Vorarbeit erfordert.
+Das größte Problem stellt hierbei das Modell der Bewegung da. Diese wird im Paper einfach nur als Kante zwsichen zwei Knoten eingeführt und musste von uns entsprechend ausführlich ausgearbeitet werden.
+Wie in dem Unterpunkt bereits beschrieben stellte sich schnell heraus, dass wir einen Kompromiss zwischen Nutzer-Freiheit und konkreter Implementation finden müssen.
+Mit dem Konzept des relativen Verlauf von Positionen glauben wir haben wir das gut geschafft. In der Projektarbeit sind wir damit aber wieder über das nächste Hindernis gestolpert.
+Die Position musste sowohl so abstrakt sein, dass sie von Agenten zum Speichern des gesamten Zustandes (mit Position von Sensoren, Armen etc) ausreicht und gleichzeitig die konkrete Möglichkeit geben um tatsächliche Entfernungen zu messen (um z.B. herauszufinden um man "'näher"' an einen Punkt kommt).
+Hier konnten wir das Problem mit einfachen Text-Tags schnell lösen.
+Für Entfernungen benutzen wir den Euklidischen Abstand über als Entfernung getaggte Dimensionen.
 
-b) wie erreicht?
-Eine Abstrakte Klasse Bewegungserzeuger musste angelegt werden, da wir nicht wissen, was eine Sinnvolle Bewegung ist. Dies überlassen wir dem Nutzer. Dieser Bewegungserzeuger übergibt uns, alle Möglichkeiten, die der Agent fähig ist, sich fort zu bewegen vom Ausgangspunkt. Somit haben wir alle nötigen Informationen um ein spezifisches Control- Set für diesen Agenten zu erstellen. Nach Pivtoraiko und Kelly haben müssen wir die Bewegungen diskretisieren. Deshalb fordern wir vom Nutzer ein Wert für die Toleranz und das Intervall. Um im nächsten Schritt die Bewegungen zu zerlegen, haben wir das Prinzip von Bewegungstunneln eingeführt. Diese hat die equivalence class von Pivtoraiko und Kelly als Grundidee. Die dadurch gewonnen Repräsentanten der einzelnen Bewegungstunneln sind das Control-Set.
+Unser Code ermöglicht somit eine einfache Handhabung eines Control-Set Generators im n-dimensionalen Raum und lässt sich leicht von verschiedenen Agenten nutzen.
 
- Dadurch haben wir einerseits einen flexiblen Code erhalten, der n- beliebige Dimensionen von Bewegungen haben kann. Das führt dazu, dass der Nutzer selbst definieren muss, was er eine gültige Bewegung ist und welche Variablen von Nutzen sind. Damit, kann ein Nutzer nach seinen Bedürfnissen, den Code anpassen.
+Leider haben wir nicht die Möglichkeit den Code an realen Robotern oder anderen Agenten zu testen.
 
-Andererseits, geben wir dem Nutzer wenige Vorgaben, an denen er sich Richten kann. Das kann dazu führen, dass unser Code uneffizient verwendet wird, da keine "'default"' Bewegung definiert ist.
+Auch können wir die Performance des Codes höchstens schätzen. Da das Control-Set aber sowieso offline berechnet werden kann spielt dies nur eine untergeordnete Rolle.
 
-Ein nächster Schritt wäre, die noch nicht im Code berücktsichtigte Berechnugszeit zu optimieren.
+Weitere Projekte könnten das Optimieren des Codes sowie das Testen an verschiedenen Agenten sein.
+Außerdem fehlt noch ein Inverser-Pfad-Generator der aus dem Control-Set ein Koordinaten-Netz erstellt.
+Unser Ziel war es ein Control-Set-Generator nach Pivtoraiko und Kelly \cite{control-set} zu erstellen, der möglichst viele Agenten unterstüzten kann und für einen möglichen Nutzer leicht mit dem eigenen Projekt benutzt werden kann.
 
+Das generelle Konzept war durch das Paper schon sehr gut vorgegeben, aber wir stellten schnell fest, dass eine so "'offene"' Implementierung sehr viel mehr Vorarbeit erfordert.
+Das größte Problem stellt hierbei das Modell der Bewegung da. Diese wird im Paper einfach nur als Kante zwsichen zwei Knoten eingeführt und musste von uns entsprechend ausführlich ausgearbeitet werden.
+Wie in dem Unterpunkt bereits beschrieben stellte sich schnell heraus, dass wir einen Kompromiss zwischen Nutzer-Freiheit und konkreter Implementation finden müssen.
+Mit dem Konzept des relativen Verlauf von Positionen glauben wir haben wir das gut geschafft. In der Projektarbeit sind wir damit aber wieder über das nächste Hindernis gestolpert.
+Die Position musste sowohl so abstrakt sein, dass sie von Agenten zum Speichern des gesamten Zustandes (mit Position von Sensoren, Armen etc) ausreicht und gleichzeitig die konkrete Möglichkeit geben um tatsächliche Entfernungen zu messen (um z.B. herauszufinden um man "'näher"' an einen Punkt kommt).
+Hier konnten wir das Problem mit einfachen Text-Tags schnell lösen.
+Für Entfernungen benutzen wir den Euklidischen Abstand über als Entfernung getaggte Dimensionen.
 
-struckturierung von b)
-	Probleme
-		Pos
-			-entferungn
-			-beliebig viele
-		"'Bewegung"'
-			-abstrakt
-			-relativen Verlauf
-	Lösung
-		Pos als Liste, unterscheidung udd "'messbaren"'
-		pythagoras über messbare als Länge
+Unser Code ermöglicht somit eine einfache Handhabung eines Control-Set Generators im n-dimensionalen Raum und lässt sich leicht von verschiedenen Agenten nutzen.
 
-		wechsel zu relativen verlauf und fabrikmethode
+Leider haben wir nicht die Möglichkeit den Code an realen Robotern oder anderen Agenten zu testen.
 
-	etc
-		probleme nicht vohersebar waren,
-		rückbezug zu paper
+Auch können wir die Performance des Codes höchstens schätzen. Da das Control-Set aber sowieso offline berechnet werden kann spielt dies nur eine untergeordnete Rolle.
+
+Weitere Projekte könnten das Optimieren des Codes sowie das Testen an verschiedenen Agenten sein.
+Außerdem fehlt noch ein Inverser-Pfad-Generator der aus dem Control-Set ein Koordinaten-Netz erstellt.

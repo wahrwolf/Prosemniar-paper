@@ -1,6 +1,5 @@
-Eine Position ist ein benutzerdefinierte Koordinate. Sie enthält, die vom Nutzer gewählten Werte und Vektoren und ist der kleinste Bestandteil einer Bewegung.
-
-Die Position wird für die Definition einer Bewegung verwendet. Sie beinhaltet Informationen wo der Agent sich befindet und in welchem Zustand.
+Um einen Weg zu finden möglichst viele Agenten zu unterstüzten haben wir bereits weiter vorne (2.2) erwähnt dass wir die Bewegung als Liste von Positionen realsiert haben.
+Für diese Positionen fallen ein paar spezielle Anforderungen an. So muss etwa die Entfernung zwischen 2 Positionen berechenbar sein aber gleichzeitig sind nicht alle Eigenschaften einer Position automatisch mit einer Entfernung verbunden.
 
 In unserem Modell lässt sich der Gesamtzustand eines Agenten als Reihe von Werten für Dimensionen beschreiben.
 Eine solche "'Dimension"' kann dabei sowohl eine tatsächliche physikalische Dimension wie eine X-Achse, als auch eine beliebige Variable samt Belegung, wie die Posiition eines Greifarmes sein.
@@ -16,6 +15,3 @@ Zusätzlich hat jede Dimension eine Toleranz der ebenfalls in Form eines double 
 In unserem Modell werden alle Bewegungen über ihren Bewegungserzeuger erstellt, so dass jeder Bewegungserzeuger für jede Bewegung individuell Dimensionen und Toleranzen verändern kann.
 
 Somit kann jede denkbare Art einer Bewegung modelliert werden.
-
----
-problem vorweg (zu viele eigenschaften, bewegung)
