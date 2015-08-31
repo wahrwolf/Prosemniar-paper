@@ -5,13 +5,13 @@ Eine Alternative dazu ist es Sammlungen an Bewegungen für verschiedene Situatio
 
 Mit dem Konzept von Pivtoraiko und Kelly ist es möglich diese Sammlungen von Kontrollbefehlen (engl Control-Sets \cite{control-sets}) als Bewegungsgrundlage zu speichern und trotzdem die volle Beweglichkeit beizubehalten.
 
-Genauer ist ein Control-Set die Menge an atomaren Bewegungen die ein Agent in einem gewissen Radius ausführen kann \cite{control-sets}.
+Genauer ist ein Control-Set die Menge an atomaren Bewegungen, die ein Agent in einem gewissen Radius ausführen kann \cite{control-sets}.
 
-Durch den Radius lassen sich verschieden große Bereiche leichter verarbeiten. Ein Mars-Rover könnte mithilfe von 2 Control-Sets mit unterschiedlichem Radius zum Beispiel in einer großen Ebene schnell ein grobmaschiges Koordinaten-Netz erzeugen während er in einer engeren Umgebung auf ein kleines und damit höher auflösendes Netz umschalten könnte.
+Durch den Radius lassen sich verschieden große Bereiche leichter verarbeiten. Ein Mars-Rover könnte mithilfe von 2 Control-Sets mit unterschiedlichem Radius zum Beispiel in einer großen Ebene schnell ein grobmaschiges Koordinaten-Netz erzeugen, während er in einer engeren Umgebung auf ein kleines und damit höher auflösendes Netz umschalten könnte.
 
-Im Gegensatz zu Pivtoraiko und Kelly definieren wir zusätzlich dass ein Control-Set immer auch zu einem Satz an Antrieben (auch Bewegungserzeuger) gehört.
+Im Gegensatz zu Pivtoraiko und Kelly definieren wir zusätzlich, dass ein Control-Set immer auch zu einem Satz an Antrieben (auch Bewegungserzeuger) gehört.
 
-Das ermöglicht es einem Agenten mit mehreren Antrieben während der Laufzeit auf ein anderes Set zu wechseln und so weitere Bewegungsmöglichkeiten zu haben.
+Das ermöglicht es einem Agenten mit mehreren Antrieben, während der Laufzeit auf ein anderes Set zu wechseln und so weitere Bewegungsmöglichkeiten zu haben.
 
 Zum Beispiel könnte ein Roboter im Katastrophen-Gebiet sowohl mit Ketten als auch mit Rädern ausgerüstet sein. Hierbei würde der Roboter ein Control-Set für den Ketten- und eines für den Radantrieb haben und könnte situationsbedingt "'umschalten"'.
 

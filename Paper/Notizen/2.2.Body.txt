@@ -1,4 +1,4 @@
-Da sich unsere Implementation für möglichst viele Agenten eigenen sollte, stellte sich die Frage wie man eine möglichst abstrakte Bewegung modelliert, die gleichzeitig noch einfach zu benutzen ist.
+Da sich unsere Implementation für möglichst viele Agenten eignen sollte, stellte sich die Frage wie man eine möglichst abstrakte Bewegung modelliert, die gleichzeitig noch einfach zu benutzen ist.
 
 Anders als Pivtoraiko und Kelly \cite{control-sets} sehen wir eine Bewegung nicht nur als einfache Verbindung zweier Knoten sonder eher als den Graph einer Funktion in einem n-dimensionalen Koordinatensystem.
 

@@ -1,10 +1,10 @@
-Unser Ziel war es ein Control-Set-Generator nach Pivtoraiko und Kelly \cite{control-set} zu erstellen, der möglichst viele Agenten unterstüzten kann und für einen möglichen Nutzer leicht mit dem eigenen Projekt benutzt werden kann.
+Unser Ziel war es ein Control-Set-Generator nach Pivtoraiko und Kelly \cite{control-sets} zu erstellen, der möglichst viele Agenten unterstüzten kann und für einen möglichen Nutzer leicht mit dem eigenen Projekt benutzt werden kann.
 
 Das generelle Konzept war durch das Paper schon sehr gut vorgegeben, aber wir stellten schnell fest, dass eine so "'offene"' Implementierung sehr viel mehr Vorarbeit erfordert.
-Das größte Problem stellt hierbei das Modell der Bewegung da. Diese wird im Paper einfach nur als Kante zwsichen zwei Knoten eingeführt und musste von uns entsprechend ausführlich ausgearbeitet werden.
+Das größte Problem stellt hierbei das Modell der Bewegung da. Diese wird im Paper einfach nur als Kante zwischen zwei Knoten eingeführt und musste von uns entsprechend ausführlich ausgearbeitet werden.
 Wie in dem Unterpunkt bereits beschrieben stellte sich schnell heraus, dass wir einen Kompromiss zwischen Nutzer-Freiheit und konkreter Implementation finden müssen.
-Mit dem Konzept des relativen Verlauf von Positionen glauben wir haben wir das gut geschafft. In der Projektarbeit sind wir damit aber wieder über das nächste Hindernis gestolpert.
-Die Position musste sowohl so abstrakt sein, dass sie von Agenten zum Speichern des gesamten Zustandes (mit Position von Sensoren, Armen etc) ausreicht und gleichzeitig die konkrete Möglichkeit geben um tatsächliche Entfernungen zu messen (um z.B. herauszufinden um man "'näher"' an einen Punkt kommt).
+Mit dem Konzept des relativen Verlauf von Positionen löst diese beiden Probleme elegant. In der Projektarbeit sind wir damit aber wieder über das nächste Hindernis gestolpert.
+Die Position musste sowohl so abstrakt sein, dass sie von Agenten zum Speichern des gesamten Zustandes (mit Position von Sensoren, Armen etc.) ausreicht und gleichzeitig die konkrete Möglichkeit geben um tatsächliche Entfernungen zu messen (um z.B. herauszufinden um man "'näher"' an einen Punkt kommt).
 Hier konnten wir das Problem mit einfachen Text-Tags schnell lösen.
 Für Entfernungen benutzen wir den Euklidischen Abstand über als Entfernung getaggte Dimensionen.
 
@@ -12,25 +12,7 @@ Unser Code ermöglicht somit eine einfache Handhabung eines Control-Set Generato
 
 Leider haben wir nicht die Möglichkeit den Code an realen Robotern oder anderen Agenten zu testen.
 
-Auch können wir die Performance des Codes höchstens schätzen. Da das Control-Set aber sowieso offline berechnet werden kann spielt dies nur eine untergeordnete Rolle.
-
-Weitere Projekte könnten das Optimieren des Codes sowie das Testen an verschiedenen Agenten sein.
-Außerdem fehlt noch ein Inverser-Pfad-Generator der aus dem Control-Set ein Koordinaten-Netz erstellt.
-Unser Ziel war es ein Control-Set-Generator nach Pivtoraiko und Kelly \cite{control-set} zu erstellen, der möglichst viele Agenten unterstüzten kann und für einen möglichen Nutzer leicht mit dem eigenen Projekt benutzt werden kann.
-
-Das generelle Konzept war durch das Paper schon sehr gut vorgegeben, aber wir stellten schnell fest, dass eine so "'offene"' Implementierung sehr viel mehr Vorarbeit erfordert.
-Das größte Problem stellt hierbei das Modell der Bewegung da. Diese wird im Paper einfach nur als Kante zwsichen zwei Knoten eingeführt und musste von uns entsprechend ausführlich ausgearbeitet werden.
-Wie in dem Unterpunkt bereits beschrieben stellte sich schnell heraus, dass wir einen Kompromiss zwischen Nutzer-Freiheit und konkreter Implementation finden müssen.
-Mit dem Konzept des relativen Verlauf von Positionen glauben wir haben wir das gut geschafft. In der Projektarbeit sind wir damit aber wieder über das nächste Hindernis gestolpert.
-Die Position musste sowohl so abstrakt sein, dass sie von Agenten zum Speichern des gesamten Zustandes (mit Position von Sensoren, Armen etc) ausreicht und gleichzeitig die konkrete Möglichkeit geben um tatsächliche Entfernungen zu messen (um z.B. herauszufinden um man "'näher"' an einen Punkt kommt).
-Hier konnten wir das Problem mit einfachen Text-Tags schnell lösen.
-Für Entfernungen benutzen wir den Euklidischen Abstand über als Entfernung getaggte Dimensionen.
-
-Unser Code ermöglicht somit eine einfache Handhabung eines Control-Set Generators im n-dimensionalen Raum und lässt sich leicht von verschiedenen Agenten nutzen.
-
-Leider haben wir nicht die Möglichkeit den Code an realen Robotern oder anderen Agenten zu testen.
-
-Auch können wir die Performance des Codes höchstens schätzen. Da das Control-Set aber sowieso offline berechnet werden kann spielt dies nur eine untergeordnete Rolle.
+Auch können wir die Performance des Codes höchstens schätzen. Da das Control-Set aber sowieso offline berechnet werden kann, spielt dies nur eine untergeordnete Rolle.
 
 Weitere Projekte könnten das Optimieren des Codes sowie das Testen an verschiedenen Agenten sein.
 Außerdem fehlt noch ein Inverser-Pfad-Generator der aus dem Control-Set ein Koordinaten-Netz erstellt.

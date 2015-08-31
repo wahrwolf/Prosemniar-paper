@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+
+\bibitem{design-pattern}
+Ralph~Johnson Erich~Gamma, Richard~Helm and Jon Vlissides.
+\newblock {\em Design Patterns, Elements of Reusable Object Oriented Software}.
+\newblock Kevin Zhang, 2004.
+
+\bibitem{control-sets}
+M.~Pivtoraiko and A.~Kelly.
+\newblock Generating near minimal spanning control sets for constrained motion
+  planning in discrete state spaces.
+\newblock {\em In Proceedings of the 2005 IEEE/RSJ International Conference on
+  Intelligent Robots and Systems (IROS 2005)}, pages 3231--3237, 2005.
+
+\end{thebibliography}

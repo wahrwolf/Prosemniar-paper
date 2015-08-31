@@ -1,9 +1,9 @@
-Beim gruppieren der Pfade wie von Pivtoraiko und kelly \cite{control-sets} als Equivalence of Paths beschrieben hatten wir das Problem, dass wir mit den Gruppen keine Möglichkeit hatten um sie auf Substituierbarkeit zu prüfen.
+Beim gruppieren der Pfade wie von Pivtoraiko und Kelly \cite{control-sets} als Equivalence of Paths beschrieben, hatten wir das Problem, dass wir mit den Gruppen keine Möglichkeit hatten um sie auf Substituierbarkeit zu prüfen.
 
-Ersteinmal fassen wir alle Bewegungen deren Endpunkt (bei gleichem Startpunkt) identisch sind. Diese Gruppen definieren wir als Tunnel.
+Erst einmal fassen wir alle Bewegungen deren Endpunkt (bei gleichem Startpunkt) identisch sind zusammen. Diese Gruppen definieren wir als Tunnel.
 
-Um zu prüfen ob ein Bewegung sich in andere zerlegen lässt, nach der Simulations Studie von Pivtoraiko und Kellys path decomposition, sind Bewegungstunnel  hilfreich.
+Um zu prüfen ob ein Bewegung sich in andere zerlegen lässt, nach der Simulations Studie von Pivtoraiko und Kellys \cite{control-sets} path decomposition, sind Bewegungstunnel  hilfreich.
 
-Man muss lediglich überprüfen ob der Tunnel mit anderen Bewegungen "'durchquerbar"' ist. (siehe Abschnitt 3)
+Man muss lediglich überprüfen, ob der Tunnel mit anderen Bewegungen "'durchquerbar"' ist. (siehe Abschnitt 3)
 
 Es ist auch leicht möglich die Bewegung zu finden, die möglichst dicht in der Mitte liegt. Hiefür wählt man einfach den Vektor mit der kleinsten geometrischen Länge aus.
