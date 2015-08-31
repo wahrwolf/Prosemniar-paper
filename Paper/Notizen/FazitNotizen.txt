@@ -8,7 +8,7 @@ Eine Abstrakte Klasse Bewegungserzeuger musste angelegt werden, da wir nicht wis
 
  Dadurch haben wir einerseits einen flexiblen Code erhalten, der n- beliebige Dimensionen von Bewegungen haben kann. Das führt dazu, dass der Nutzer selbst definieren muss, was er eine gültige Bewegung ist und welche Variablen von Nutzen sind. Damit, kann ein Nutzer nach seinen Bedürfnissen, den Code anpassen.
 
-Andererseits, geben wir dem Nutzer wenige Vorgaben, an denen er sich Richten kann. Das kann dazu führen, dass unser Code uneffizient verwendet wird, da keine "default" Bewegung definiert ist.
+Andererseits, geben wir dem Nutzer wenige Vorgaben, an denen er sich Richten kann. Das kann dazu führen, dass unser Code uneffizient verwendet wird, da keine "'default"' Bewegung definiert ist.
 
 Ein nächster Schritt wäre, die noch nicht im Code berücktsichtigte Berechnugszeit zu optimieren.
 
@@ -18,11 +18,11 @@ struckturierung von b)
 		Pos
 			-entferungn
 			-beliebig viele
-		"Bewegung"
+		"'Bewegung"'
 			-abstrakt
 			-relativen Verlauf
 	Lösung
-		Pos als Liste, unterscheidung udd "messbaren"
+		Pos als Liste, unterscheidung udd "'messbaren"'
 		pythagoras über messbare als Länge
 
 		wechsel zu relativen verlauf und fabrikmethode

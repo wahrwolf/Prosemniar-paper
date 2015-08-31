@@ -1,7 +1,7 @@
 Die meisten Pfadfindungsalgoritmen wie A* und ähnliche arbeiten mit einer Gitter-Repräsentation ihrer Umgebung.
-Die meisten Agenten wie ferngesteuerte Autos oder Quadcopter sind aber nicht in der Lage ihre Umgebung als "Punkte" anzusteuern.
-Um also Pfadfindungsalgoritmen (im folgenden auch als suchbasierte Algorithmen) schlagen Pvitoraiko und Kelly ein Konzept namens "Control-Sets" vor.
-Hierbei versucht man sogenannte "Motionprimitives" zu finden. Gemeint sind die Grundbewegungen, also jene aus denen sich alle anderen Bewegungen zusammensetzen. Da eine "Motionprimitve" also eine kleinstmögliche unteilbare Bewegung ist, werden wir den Begriff "atomare" Bewegung im folgenden synonym verwenden.
+Die meisten Agenten wie ferngesteuerte Autos oder Quadcopter sind aber nicht in der Lage ihre Umgebung als "'Punkte"' anzusteuern.
+Um also Pfadfindungsalgoritmen (im folgenden auch als suchbasierte Algorithmen) schlagen Pivtoraiko und Kelly ein Konzept \cite{control-sets} namens "'Control-Sets"' vor.
+Hierbei versuchen die Autoren sogenannte "'Motionprimitives"' zu finden. Gemeint sind die Grundbewegungen, also jene aus denen sich alle anderen Bewegungen zusammensetzen. Da eine "'Motionprimitve"' eine kleinstmögliche unteilbare Bewegung ist, werden wir den Begriff "'atomare"' Bewegung im folgenden synonym verwenden.
 
 Mithilfe dieser elementaren Bewegungen lässt sich von einem Startpunkt ein Koordinaten-Netz herleiten. Hierfür wird erst jede Bewegung einmal ausgeführt und deren Endpunkte markiert. Anschließend wird von jedem Endpunkt wieder jede Bewegung ausgeführt und so weiter.
 Mit diesem Verfahren erhält man ein beliebig großen Gitter-Netz der Umgebung, auf den nun mit beliebigen suchbasierten Algorithmen weitere Pfadplannung betrieben werden kann.

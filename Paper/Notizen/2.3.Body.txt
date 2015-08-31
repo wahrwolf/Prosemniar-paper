@@ -1,9 +1,9 @@
 Da die Agenten sehr viele verschiedene Antriebe zur verfügung haben, mussten wir ein Konzept zur vereinheitlichung entwickeln.
-Wir haben uns dazu entschloßen die abstrakte Fabrikmethode nach GoF[2] zu benutzen.
+Wir haben uns dazu entschloßen die abstrakte Fabrikmethode nach GoF \cite{design-pattern} zu benutzen.
 Hierbei stellt die Bewegung das abstrakte Produkt da und der Bewegungserzeuger die abstrakte Fabrik.
-Letztere ist bewusst als Interface gehalten, damit der gesamte Prozess an Abhängigkeiten bewusst zu dem "Nutzer" ausgelagert wird.
+Letztere ist bewusst als Interface gehalten, damit der gesamte Prozess an Abhängigkeiten bewusst zu dem "'Nutzer"' ausgelagert wird.
 
-Unser Bewegungserzeuger zeichnet sich dadurch aus, dass er eine endliche Menge an Bewegungen erstellen kann und jede dieser Bewegungen auch tatsächlich "ausführen" kann.
+Unser Bewegungserzeuger zeichnet sich dadurch aus, dass er eine endliche Menge an Bewegungen erstellen kann und jede dieser Bewegungen auch tatsächlich "'ausführen"' kann.
 
 Wenn man zum Beispiel einen Roboter mit Rädern und einer Lekung hatt, so würde der Treiber der sowohl die Räder als auch die Lenkung ansteuert der Bewegungserzeuger sein.
 Eine mögliche Bewegung wäre ein Tupel aus einer Lenkeinstellung (z.B. in Grad) und einer Zeitangabe wie lange Gas gegeben werden soll.

@@ -3,9 +3,9 @@ Eine Position ist ein benutzerdefinierte Koordinate. Sie enthält, die vom Nutze
 Die Position wird für die Definition einer Bewegung verwendet. Sie beinhaltet Informationen wo der Agent sich befindet und in welchem Zustand.
 
 In unserem Modell lässt sich der Gesamtzustand eines Agenten als Reihe von Werten für Dimensionen beschreiben.
-Eine solche "Dimension" kann dabei sowohl eine tatsächliche physikalische Dimension wie eine X-Achse, als auch eine beliebige Variable samt Belegung, wie die Posiition eines Greifarmes sein.
+Eine solche "'Dimension"' kann dabei sowohl eine tatsächliche physikalische Dimension wie eine X-Achse, als auch eine beliebige Variable samt Belegung, wie die Posiition eines Greifarmes sein.
 
-Wir untersscheiden lediglich zwischen Dimensionen die als Strecke dargestellt werden können (wie z.B. Zeit, x-Achse, ...) und sogennaten "User defined Dimensions" (UdFs) welche  alles andere abdeckt.
+Wir untersscheiden lediglich zwischen Dimensionen die als Strecke dargestellt werden können (wie z.B. Zeit, x-Achse, ...) und sogennaten "'User defined Dimensions"' (UdFs) welche  alles andere abdeckt.
 
 Möchte man z.B. die Entfernung zwischen zwei Positionen wissen, so kann man einfach die Differenz aller Dimensionen die keine UdFs sind entweder als Tupel oder als, mit der geometrischen Summenformel verrechneten, Gesamtwert angeben.
 

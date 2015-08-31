@@ -2,5 +2,5 @@ In diesem Report wird unsere Implementation eines Algorithmus zur Erstellung ein
 Anschließend sortieren wir alle nicht atomaren Gruppen aus.
 Im letzen Schritt übernehmen wir die kürzeste Bewegung jeder Gruppe als deren Repräsentant.
 Die Menge der Repräsentanten kann anschließend für verschiedene Pfadfindungsalgorithmen benutzt werden und garantiert dabei dass alle Pfade begehbar sind.
-Der gesamte Algorithmus orientiert sich dabei stark an dem theoretischen Entwurf[1] von Pivtoraiko und Kelly
+Der gesamte Algorithmus orientiert sich dabei stark an dem theoretischen Entwurf \cite{control-sets} von Pivtoraiko und Kelly
 
